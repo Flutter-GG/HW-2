@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:myproject/model/my_model.dart';
+import 'package:myproject/view/home_screen.dart';
 import 'package:myproject/view/search_screen.dart';
 
 void main() {
@@ -25,6 +26,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Search());
+    return const MaterialApp(home: Home());
   }
 }
