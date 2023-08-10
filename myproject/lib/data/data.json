@@ -1,0 +1,34 @@
+{
+    "products": [
+
+   {
+    "id": "1",
+    "title": "Get ready for a repositioned end call button in iOS 17",
+    "date": "2023-08-10",
+    "author": "The Verge",
+    "content": "Apple’s redesigned call interface repositions the red end call button, moving it closer to the other controls.",
+    "image": "https://duet-cdn.vox-cdn.com/thumbor/0x0:1290x860/1200x800/filters:focal(645x430:646x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24841806/IMG_1562.jpg",
+    "subject": "Tech"
+  },
+
+  {
+    "id": "2",
+    "title": "The Morning After: Which Samsung foldable should you buy?",
+    "date": "2023-08-25",
+    "author": "Engadget",
+    "content": "Samsung’s newest foldables, the Z Flip 5 and Z Fold 5, have been put through their paces by Engadget’s team of skilled reviewers. If you are wondering which of these two you should lay your cash down for, then we’ve got all the information you need.",
+    "image": "https://images.samsung.com/sa_en/smartphones/galaxy-z-fold3-5g/buy/zfold3_carousel_mainsinglekv_mo.jpg",
+    "subject": "Tech"
+  },
+  {
+    "id": "3",
+    "title": "The Morning After: Which Samsung foldable should you buy?",
+    "date": "2023-08-25",
+    "author": "Engadget",
+    "content": "Samsung’s newest foldables, the Z Flip 5 and Z Fold 5, have been put through their paces by Engadget’s team of skilled reviewers. If you are wondering which of these two you should lay your cash down for, then we’ve got all the information you need.",
+    "image": "https://images.samsung.com/sa_en/smartphones/galaxy-z-fold3-5g/buy/zfold3_carousel_mainsinglekv_mo.jpg",
+    "subject": "Tech"
+  }
+
+ ]
+}
