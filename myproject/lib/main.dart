@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:myproject/model/my_model.dart';
-import 'package:myproject/view/homeview.dart';
+import 'package:myproject/view/search_screen.dart';
 
 void main() {
   File blogfile =
@@ -25,6 +25,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Home());
+    return const MaterialApp(home: Search());
   }
 }
