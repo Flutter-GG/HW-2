@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:myproject/view/search_screen.dart';
+import 'package:myproject/widget/icons_widget.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
