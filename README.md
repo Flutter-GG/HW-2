@@ -35,7 +35,7 @@ Create a Blog app using the Flutter framework. In the app, users should be able 
 
 
 ## Bonus:
-
+  - Create a login screen, and display all posts of the user on his profile screen (should create user id in each post in JSON data).
 
 ## Submission:
 1. Flutter Project:
