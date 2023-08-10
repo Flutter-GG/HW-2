@@ -11,6 +11,7 @@ class Blog {
         required this.id,
         required this.title,
         required this.date,
+
         required this.author,
         required this.content,
         required this.image,
