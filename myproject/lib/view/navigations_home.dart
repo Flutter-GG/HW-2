@@ -23,8 +23,9 @@ class _NavigatonBarState extends State<NavigatonBar> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile")
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Profile"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.add_photo_alternate_sharp), label: "Profile"),
         ],
         currentIndex: selectedIndex,
         selectedItemColor: Colors.green,

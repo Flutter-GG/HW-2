@@ -22,6 +22,7 @@ class _HomeState extends State<Home> {
               style: TextStyle(fontSize: 20),
             ),
           ),
+          actions: [Icon(Icons.notifications_none_outlined)],
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
         floatingActionButton: Column(
