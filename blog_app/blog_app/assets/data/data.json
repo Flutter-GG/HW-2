@@ -1,0 +1,40 @@
+{
+ "blogData": [
+  {
+    "author_id": 1,
+    "author_name": "Malky McEwan",
+    "author_profile_photo":
+        "https://www.rtassociates.co/wp-content/uploads/2022/12/image-Edited.png",
+    "blog_image":
+        "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*mNRi_FVfD9oiQCrL1LoNoQ.jpeg",
+    "blog_title": "The Magic Art of Saying More with Less",
+    "blog_description": "Metonymy and Synecdoche — A linguistic close-up",
+    "blog_content":
+        "The unforgettable opening sequence of Sergio Leones Once Upon a Time in the West spans ten minutes and captivates viewers with barely a word spoken.We are taken to a remote train station where three leather faces wait. Every detail is meticulously portrayed, from cracked knuckles to an irritating fly, a squeaky windmill, and jangling spurs.Leone uses the power of close-ups to build an air of drama and tension.",
+    "user_id": 2,
+    "user_name": "Walter Rhein",
+    "user_profile_photo":
+        "https://www.upgrade100.com/img/speakers/w284h360/Florian_Will_155862643688797500.jpg",
+    "bookmark": false
+  },
+  {
+    "author_id": 2,
+    "author_name": "Walter Rhein",
+    "author_profile_photo":
+        "https://www.upgrade100.com/img/speakers/w284h360/Florian_Will_155862643688797500.jpg",
+    "blog_image":
+        "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*4GLthNbw3i2DCih_4G-qhw.jpeg",
+    "blog_title":
+        "The Platform That Offers the Most Innovative Tools Will Attract the Best Writers",
+    "blog_description":
+        "How analytical insights can change human literature for the better",
+    "blog_content":
+        "Modern writers can no longer afford to be afraid of numbers. Until recently, the only number that writers have concerned themselves with is whats written on the check (and how it needs one, preferably two, more zeros at the end).Today, writers, like professionals in any industry, are up to their eyeballs in data. We know how many people read our stories, we know where those readers came from, we know the keywords that interest them, and much more. Numbers are great, provided you know how to evaluate them. But one of the few things I remember from studying Physics in college was how easy it can be to manipulate data to justify a false assumption. Its important to keep in mind that statistics arent an absolute. Statistics are a tool and the only way that tool is useful is if we learn to use it correctly. Its not efficient to saw through a board with a screwdriver. That doesnt mean that the screwdriver is worthless, it means that we constantly need to develop new tools more appropriately suited for the job at hand.",
+    "user_id": 1,
+    "user_name": "Malky McEwan",
+    "user_profile_photo":
+        "https://www.rtassociates.co/wp-content/uploads/2022/12/image-Edited.png",
+    "bookmark": false
+  }
+]
+}
