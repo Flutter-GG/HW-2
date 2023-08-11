@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:myproject/main.dart';
 import 'package:myproject/model/my_model.dart';
-import 'package:myproject/widget/blog_screen.dart';
 import 'package:myproject/widget/card_user.dart';
 
 List listBlog1 = [];
 
 class Search extends StatefulWidget {
-  Search({super.key});
+  const Search({super.key});
 
   @override
   State<Search> createState() => _SearchState();
@@ -32,8 +31,8 @@ class _SearchState extends State<Search> {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Colors.grey[300],
-                prefixIcon: Icon(Icons.search),
-                suffixIcon: Icon(Icons.not_interested_outlined),
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: const Icon(Icons.not_interested_outlined),
                 hintText: "search",
               ),
               onChanged: (text) => searchblog(text),
@@ -42,7 +41,7 @@ class _SearchState extends State<Search> {
         ),
       ),
       body: ListView.builder(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         itemBuilder: (context, index) {
           return Carduser(

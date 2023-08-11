@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-extension num on BuildContext {
+extension Num on BuildContext {
   gitpush(StatefulWidget a) {
     return Navigator.push(this, MaterialPageRoute(builder: (context) => a));
   }
 
-  Textfield(TextEditingController a) {
+  textfield(TextEditingController a) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextField(
@@ -13,7 +13,7 @@ extension num on BuildContext {
         decoration: InputDecoration(
             filled: true,
             fillColor: Colors.grey[300],
-            border: OutlineInputBorder(),
+            border: const OutlineInputBorder(),
             hintText: "enter id"),
       ),
     );

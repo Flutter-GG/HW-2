@@ -24,15 +24,15 @@ class _AddpageState extends State<Addpage> {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.white,
-          iconTheme: IconThemeData(color: Colors.black),
-          title: Text(
+          iconTheme: const IconThemeData(color: Colors.black),
+          title: const Text(
             "Add content",
             style: TextStyle(color: Colors.black),
           ),
           actions: [
             IconButton(
-                onPressed: () => context.gitpush(Home()),
-                icon: Icon(
+                onPressed: () => context.gitpush(const Home()),
+                icon: const Icon(
                   Icons.home,
                   color: Colors.black,
                 )),
@@ -40,16 +40,16 @@ class _AddpageState extends State<Addpage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            context.Textfield(idController),
-            context.Textfield(titlecontroller),
-            context.Textfield(authorcontroller),
-            context.Textfield(mincontroller),
-            context.Textfield(contentcontroller),
-            context.Textfield(subjectcontroller),
-            SizedBox(
+            context.textfield(idController),
+            context.textfield(titlecontroller),
+            context.textfield(authorcontroller),
+            context.textfield(mincontroller),
+            context.textfield(contentcontroller),
+            context.textfield(subjectcontroller),
+            const SizedBox(
               height: 40,
             ),
-            ElevatedButtonAdd(context)
+            elevatedButtonAdd(context)
           ],
         ),
       ),
@@ -57,13 +57,13 @@ class _AddpageState extends State<Addpage> {
   }
 
 
-  ElevatedButtonAdd(BuildContext context) {
+  elevatedButtonAdd(BuildContext context) {
     return SizedBox(
       height: 50,
       width: 300,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: Colors.black,
+            backgroundColor: Colors.black,
           ),
           onPressed: () {
             Blog newblog = Blog(
@@ -78,9 +78,9 @@ class _AddpageState extends State<Addpage> {
             );
             listBlog.add(newblog);
             setState(() {});
-            context.gitpush(Home());
+            context.gitpush(const Home());
           },
-          child: Text(
+          child: const Text(
             "Add Blog",
           )),
     );

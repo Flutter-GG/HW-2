@@ -14,8 +14,8 @@ class _ReadState extends State<Read> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          iconTheme: IconThemeData(color: Colors.black),
-          title: Text(
+          iconTheme: const IconThemeData(color: Colors.black),
+          title: const Text(
             "reading list",
             style: TextStyle(color: Colors.black),
           ),

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myproject/main.dart';
 import 'package:myproject/model/my_model.dart';
-import 'package:myproject/view/search_screen.dart';
 import 'package:myproject/widget/blog_screen.dart';
-import 'package:myproject/widget/icons_widget.dart';
+
 
 class Carduser extends StatefulWidget {
   const Carduser({
@@ -49,7 +48,7 @@ class _CarduserState extends State<Carduser> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(widget.blog.author)
@@ -73,7 +72,7 @@ class _CarduserState extends State<Carduser> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               // ListTile(

@@ -7,7 +7,7 @@ class Threicon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Icon(Icons.save_alt_rounded),

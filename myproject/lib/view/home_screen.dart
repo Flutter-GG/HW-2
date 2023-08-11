@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
               style: TextStyle(fontSize: 20, color: Colors.black),
             ),
           ),
-          actions: [
+          actions: const [
             Icon(
               Icons.notifications_none_outlined,
               color: Colors.black,
@@ -37,9 +37,9 @@ class _HomeState extends State<Home> {
             FloatingActionButton(
                 backgroundColor: Colors.green,
                 heroTag: "btnAdd",
-                child: Icon(Icons.add_box_rounded),
+                child: const Icon(Icons.add_box_rounded),
                 onPressed: () => Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Addpage())))
+                    MaterialPageRoute(builder: (context) => const Addpage())))
           ],
         ),
         body: ListView.builder(

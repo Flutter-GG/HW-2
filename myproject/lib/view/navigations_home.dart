@@ -13,7 +13,7 @@ class NavigatonBar extends StatefulWidget {
 }
 
 class _NavigatonBarState extends State<NavigatonBar> {
-  final List screens = [const Home(), Search(), Read()];
+  final List screens = [const Home(), const Search(), const Read()];
   int selectedIndex = 0;
 
   @override

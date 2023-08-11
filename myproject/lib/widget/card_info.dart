@@ -19,28 +19,28 @@ class _CarduserinfoState extends State<Carduserinfo> {
         Row(
           children: [
             Text(widget.blog.author),
-            SizedBox(
+            const SizedBox(
               width: 50,
             ),
-            Text("Follow", style: TextStyle(color: Colors.green)),
+            const Text("Follow", style: TextStyle(color: Colors.green)),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         Row(
           children: [
             Text(
               widget.blog.min,
-              style: TextStyle(fontWeight: FontWeight.w100),
+              style: const TextStyle(fontWeight: FontWeight.w100),
             ),
-            SizedBox(
+            const SizedBox(
               width: 20,
             ),
-            Text("Apr2,2023"),
+            const Text("Apr2,2023"),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
       ],

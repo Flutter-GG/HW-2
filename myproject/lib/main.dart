@@ -1,14 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:myproject/model/my_model.dart';
-import 'package:myproject/view/add_screen.dart';
-import 'package:myproject/widget/blog_screen.dart';
-import 'package:myproject/view/home_screen.dart';
 import 'package:myproject/view/navigations_home.dart';
-import 'package:myproject/view/read_screen.dart';
-import 'package:myproject/view/search_screen.dart';
+
 
 List<Blog> listBlog = [];
 
@@ -30,6 +25,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: NavigatonBar());
+    return const MaterialApp(home: NavigatonBar());
   }
 }

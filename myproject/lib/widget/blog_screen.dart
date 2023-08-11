@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myproject/model/my_model.dart';
-import 'package:myproject/widget/Carduserinfo.dart';
+import 'package:myproject/widget/card_info.dart';
 
 class Blogs extends StatefulWidget {
   const Blogs({
@@ -19,7 +19,7 @@ class _BlogsState extends State<Blogs> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -31,10 +31,10 @@ class _BlogsState extends State<Blogs> {
                 padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
                   widget.blog.title,
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               )),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Row(
@@ -49,7 +49,7 @@ class _BlogsState extends State<Blogs> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Carduserinfo(
@@ -57,14 +57,14 @@ class _BlogsState extends State<Blogs> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Text(
                 widget.blog.subject,
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Image.network(
@@ -72,14 +72,14 @@ class _BlogsState extends State<Blogs> {
                 width: 400,
                 fit: BoxFit.cover,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Text(
+              const Text(
                 "General overview",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Padding(
