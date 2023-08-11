@@ -19,7 +19,14 @@ class _BlogsState extends State<Blogs> {
         child: Column(
           //  mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(child: Text(widget.blog.title)),
+            Center(
+                child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              child: Text(
+                widget.blog.title,
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            )),
             SizedBox(
               height: 50,
             ),
@@ -46,7 +53,10 @@ class _BlogsState extends State<Blogs> {
             SizedBox(
               height: 30,
             ),
-            Text(widget.blog.subject),
+            Text(
+              widget.blog.subject,
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            ),
             SizedBox(
               height: 30,
             ),
@@ -95,9 +105,9 @@ class _CarduserinfoState extends State<Carduserinfo> {
           children: [
             Text(widget.blog.author),
             SizedBox(
-              width: 20,
+              width: 50,
             ),
-            Text("Follow"),
+            Text("Follow", style: TextStyle(color: Colors.green)),
           ],
         ),
         SizedBox(
@@ -105,11 +115,14 @@ class _CarduserinfoState extends State<Carduserinfo> {
         ),
         Row(
           children: [
-            Text(widget.blog.min),
+            Text(
+              widget.blog.min,
+              style: TextStyle(fontWeight: FontWeight.w100),
+            ),
             SizedBox(
               width: 20,
             ),
-            Text("ddd"),
+            Text("Apr2,2023"),
           ],
         ),
         SizedBox(
