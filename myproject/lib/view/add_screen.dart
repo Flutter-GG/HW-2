@@ -73,6 +73,7 @@ class _AddpageState extends State<Addpage> {
                     min: mincontroller.text,
                   );
                   listBlog.add(newblog);
+                  setState(() {});
                 },
                 child: Text("data"))
           ],
