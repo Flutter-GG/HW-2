@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myproject/main.dart';
 import 'package:myproject/model/my_model.dart';
 import 'package:myproject/view/search_screen.dart';
+import 'package:myproject/widget/blog_screen.dart';
 import 'package:myproject/widget/icons_widget.dart';
 
 class Carduser extends StatefulWidget {
@@ -26,7 +27,9 @@ class _CarduserState extends State<Carduser> {
       onTap: () => Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => Search(),
+            builder: (context) => Blogs(
+              blog: widget.blog,
+            ),
           )),
       child: Card(
         margin: const EdgeInsets.all(20),
