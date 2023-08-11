@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hw2/custom_widgets/custom_app_bar_widget.dart';
+import 'package:flutter_hw2/screens/all_posts_screen.dart';
 // import 'package:flutter_hw2/custom_widgets/custom_bottom_nav_bar.dart';
 // import 'package:flutter_hw2/custom_widgets/custom_container_widget.dart';
-import 'package:flutter_hw2/screens/all_posts_screen.dart';
+// import 'package:flutter_hw2/screens/all_posts_screen.dart';
+import 'package:flutter_hw2/screens/searching_posts_screen.dart';
+
+import 'screens/single_post_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -19,7 +23,7 @@ class MainApp extends StatelessWidget {
         appBar: CustomAppBar(
           title: 'test',
         ),
-        body: HomePage(),
+        body: HomePageLogic(),
       ),
     );
   }

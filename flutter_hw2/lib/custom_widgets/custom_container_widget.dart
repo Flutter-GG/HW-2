@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hw2/custom_widgets/custom_border_radius_images.dart';
 import 'package:flutter_hw2/custom_widgets/custom_icon_buttons.dart';
 import 'package:flutter_hw2/custom_widgets/extensions.dart';
+import 'package:flutter_hw2/custom_widgets/custom_rounded_images.dart';
 
 class CustomPostContainerWidget extends StatelessWidget {
   const CustomPostContainerWidget(
@@ -14,7 +16,8 @@ class CustomPostContainerWidget extends StatelessWidget {
       this.title = 'title',
       this.profileName = 'profile name',
       this.profileImage,
-      this.reactions = 0});
+      this.reactions = 0,
+      this.isBookedMark});
 
   final Function()? onPressedBookmark;
   final Function()? onPressedRemove;
@@ -26,6 +29,7 @@ class CustomPostContainerWidget extends StatelessWidget {
   final String? profileName;
   final String? profileImage;
   final int? reactions;
+  final bool? isBookedMark;
 
   @override
   Widget build(BuildContext context) {
@@ -46,11 +50,7 @@ class CustomPostContainerWidget extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(50),
-                        child: Image.network('$profileImage',
-                            width: 20, height: 20, fit: BoxFit.fill),
-                      ),
+                      CustomRoundedImages(roundedImage: profileImage),
                       const SizedBox(
                         width: 10,
                       ),
@@ -69,11 +69,7 @@ class CustomPostContainerWidget extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(7),
-                  child: Image.network('$postImage',
-                      width: 80, height: 50, fit: BoxFit.cover),
-                ),
+                CustomBorderRadiusImages(borderRadiusImage: postImage),
                 Row(
                   children: [
                     CustomIconButtons(
