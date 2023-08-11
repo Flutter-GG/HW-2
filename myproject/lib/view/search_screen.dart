@@ -19,7 +19,8 @@ class _SearchState extends State<Search> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
+        elevation: 0,
         title: Container(
           width: double.infinity,
           height: 40,
@@ -29,7 +30,10 @@ class _SearchState extends State<Search> {
             child: TextField(
               controller: controller,
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.grey[300],
                 prefixIcon: Icon(Icons.search),
+                suffixIcon: Icon(Icons.not_interested_outlined),
                 hintText: "search",
               ),
               onChanged: (text) => searchblog(text),

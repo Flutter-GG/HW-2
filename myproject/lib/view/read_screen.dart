@@ -13,7 +13,15 @@ class _ReadState extends State<Read> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("reading list")),
+        appBar: AppBar(
+          iconTheme: IconThemeData(color: Colors.black),
+          title: Text(
+            "reading list",
+            style: TextStyle(color: Colors.black),
+          ),
+          elevation: 0,
+          backgroundColor: Colors.white,
+        ),
         body: ListView.builder(
             itemCount: listBlog.length,
             itemBuilder: (context, index) {

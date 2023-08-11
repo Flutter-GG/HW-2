@@ -22,10 +22,21 @@ class _AddpageState extends State<Addpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Add content"), actions: [
-        IconButton(
-            onPressed: () => context.gitpush(Home()), icon: Icon(Icons.home)),
-      ]),
+      appBar: AppBar(
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Colors.black),
+          title: Text(
+            "Add content",
+            style: TextStyle(color: Colors.black),
+          ),
+          actions: [
+            IconButton(
+                onPressed: () => context.gitpush(Home()),
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.black,
+                )),
+          ]),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -82,5 +93,3 @@ class _AddpageState extends State<Addpage> {
     );
   }
 }
-
-

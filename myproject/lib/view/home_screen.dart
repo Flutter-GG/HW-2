@@ -15,14 +15,20 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.white,
           leading: const Align(
             alignment: Alignment.center,
             child: Text(
               "Home",
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20, color: Colors.black),
             ),
           ),
-          actions: [Icon(Icons.notifications_none_outlined)],
+          actions: [
+            Icon(
+              Icons.notifications_none_outlined,
+              color: Colors.black,
+            )
+          ],
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
         floatingActionButton: Column(
