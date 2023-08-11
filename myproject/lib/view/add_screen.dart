@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myproject/main.dart';
 import 'package:myproject/model/my_model.dart';
 import 'package:myproject/view/home_screen.dart';
+import 'package:myproject/view/utility/extension.dart';
 
 class Addpage extends StatefulWidget {
   const Addpage({super.key});
@@ -74,7 +75,7 @@ class _AddpageState extends State<Addpage> {
                   setState(() {});
                   context.gitpush(Home());
                 },
-                child: Text("Add Blo"))
+                child: Text("Add Blog"))
           ],
         ),
       ),
@@ -82,8 +83,4 @@ class _AddpageState extends State<Addpage> {
   }
 }
 
-extension num on BuildContext {
-  gitpush(StatefulWidget a) {
-    return Navigator.push(this, MaterialPageRoute(builder: (context) => a));
-  }
-}
+
