@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myproject/main.dart';
+import 'package:myproject/view/add_screen.dart';
 import 'package:myproject/widget/card_h.dart';
 import 'package:myproject/widget/card_user.dart';
 
@@ -22,6 +23,17 @@ class _HomeState extends State<Home> {
               style: TextStyle(fontSize: 20),
             ),
           ),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+        floatingActionButton: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+                heroTag: "btnAdd",
+                child: Icon(Icons.add_box_rounded),
+                onPressed: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Addpage())))
+          ],
         ),
         body: ListView.builder(
             itemCount: listBlog.length,
