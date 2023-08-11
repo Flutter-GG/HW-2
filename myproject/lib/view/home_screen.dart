@@ -35,6 +35,7 @@ class _HomeState extends State<Home> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             FloatingActionButton(
+                backgroundColor: Colors.green,
                 heroTag: "btnAdd",
                 child: Icon(Icons.add_box_rounded),
                 onPressed: () => Navigator.push(context,

@@ -40,37 +40,74 @@ class _AddpageState extends State<Addpage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TextField(
-              controller: idController,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(), hintText: "enter id"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: idController,
+                decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.grey[300],
+                    border: OutlineInputBorder(),
+                    hintText: "enter id"),
+              ),
             ),
-            TextField(
-              controller: titlecontroller,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(), hintText: "enter ttitle"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: titlecontroller,
+                decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.grey[300],
+                    border: OutlineInputBorder(),
+                    hintText: "enter ttitle"),
+              ),
             ),
-            TextField(
-              controller: authorcontroller,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(), hintText: "enter author"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: authorcontroller,
+                decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.grey[300],
+                    border: OutlineInputBorder(),
+                    hintText: "enter author"),
+              ),
             ),
-            TextField(
-              controller: mincontroller,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(), hintText: "enter min"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: mincontroller,
+                decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.grey[300],
+                    border: OutlineInputBorder(),
+                    hintText: "enter min"),
+              ),
             ),
-            TextField(
-              controller: contentcontroller,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(), hintText: "enter content"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: contentcontroller,
+                decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.grey[300],
+                    border: OutlineInputBorder(),
+                    hintText: "enter content"),
+              ),
             ),
-            TextField(
-              controller: subjectcontroller,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(), hintText: "enter subject"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: subjectcontroller,
+                decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.grey[300],
+                    border: OutlineInputBorder(),
+                    hintText: "enter subject"),
+              ),
             ),
             ElevatedButton(
+ 
                 onPressed: () {
                   Blog newblog = Blog(
                     id: idController.text,
