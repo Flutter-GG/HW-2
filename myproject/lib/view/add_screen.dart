@@ -74,7 +74,7 @@ class _AddpageState extends State<Addpage> {
                   setState(() {});
                   context.gitpush(Home());
                 },
-                child: Text("data"))
+                child: Text("Add Blog"))
           ],
         ),
       ),
