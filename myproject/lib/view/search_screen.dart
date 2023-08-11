@@ -12,7 +12,7 @@ class Search extends StatefulWidget {
 
 class _SearchState extends State<Search> {
   final controller = TextEditingController();
-  List<Blog> listsearch = [];
+  List<Blog> listBlog = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,10 +36,10 @@ class _SearchState extends State<Search> {
       ),
       body: Expanded(
           child: ListView.builder(
-              itemCount: listsearch.length,
+              itemCount: listBlog.length,
               itemBuilder: (context, index) {
                 final book = Carduser(
-                  blog: listsearch[index],
+                  blog: listBlog[index],
                 );
                 return ListTile(
                   leading: Image.network(
@@ -55,11 +55,11 @@ class _SearchState extends State<Search> {
   }
 
   void searchblog(String query) {
-    final suggestion = listsearch.where((book) {
+    final suggestion = listBlog.where((book) {
       final blogtitle = book.title.toLowerCase();
 
       return blogtitle.contains(blogtitle);
     }).toList();
-    setState(() => listsearch = suggestion);
+    setState(() => listBlog = suggestion);
   }
 }

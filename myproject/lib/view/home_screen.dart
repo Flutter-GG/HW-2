@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myproject/main.dart';
 import 'package:myproject/view/add_screen.dart';
-import 'package:myproject/widget/card_h.dart';
 import 'package:myproject/widget/card_user.dart';
 
 class Home extends StatefulWidget {

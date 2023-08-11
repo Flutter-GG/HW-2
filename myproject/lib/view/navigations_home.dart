@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myproject/view/home_screen.dart';
+import 'package:myproject/view/read_screen.dart';
 import 'package:myproject/view/search_screen.dart';
 
 class NavigatonBar extends StatefulWidget {
@@ -12,7 +13,7 @@ class NavigatonBar extends StatefulWidget {
 }
 
 class _NavigatonBarState extends State<NavigatonBar> {
-  final List screens = [const Home(), Search()];
+  final List screens = [const Home(), Search(), Read()];
   int selectedIndex = 0;
 
   @override
@@ -22,6 +23,7 @@ class _NavigatonBarState extends State<NavigatonBar> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile")
         ],
         currentIndex: selectedIndex,
