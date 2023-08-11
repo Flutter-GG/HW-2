@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:myproject/model/my_model.dart';
 import 'package:myproject/view/add_screen.dart';
 import 'package:myproject/view/home_screen.dart';
+import 'package:myproject/view/navigations_home.dart';
 
 List<Blog> listBlog = [];
 
@@ -26,6 +27,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Home());
+    return const MaterialApp(home: NavigatonBar());
   }
 }
