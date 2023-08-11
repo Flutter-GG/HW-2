@@ -1,4 +1,5 @@
 class PostsDataModel {
+  bool? isBookedmark;
   int? id;
   int? usedId;
   int? reactions;
@@ -26,6 +27,7 @@ class PostsDataModel {
       this.reactions,
       this.postImage,
       this.readingTime,
+      this.isBookedmark,
       this.profileImage});
 
   factory PostsDataModel.fromJson(Map json) {
@@ -40,10 +42,14 @@ class PostsDataModel {
       postImage: json['post_image'],
       readingTime: json['reading_time'],
       profileImage: json['profile_image'],
+      isBookedmark: json['readin_list'],
       tags: json['tags'] != null ? List<String>.from(json['tags']) : null,
       video: json['video'] != null ? List<String?>.from(json['video']) : null,
       photos:
           json['photos'] != null ? List<String?>.from(json['photos']) : null,
     );
+  }
+  void toggleReadInList() {
+    isBookedmark = !isBookedmark!;
   }
 }

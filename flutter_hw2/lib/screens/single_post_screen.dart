@@ -30,20 +30,23 @@ class SinglePostPage extends StatelessWidget {
                   const SizedBox(width: 25),
                   Column(
                     children: [
-                      Text('${post.userName}'),
-                      Text('${post.readingTime}')
+                      Text(
+                          '${post.userName}\n${post.readingTime} • ${post.date}')
                     ],
                   )
                 ],
               ),
               const SizedBox(height: 25),
-              Text('${post.body}'),
+              Text(
+                '${post.body}',
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 25),
               CustomBorderRadiusImages(
                 borderRadiusImage: post.postImage,
                 height: 250,
                 width: context.screenWidth,
-              )
+              ),
             ],
           ),
         ),

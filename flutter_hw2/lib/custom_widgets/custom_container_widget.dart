@@ -17,7 +17,7 @@ class CustomPostContainerWidget extends StatelessWidget {
       this.profileName = 'profile name',
       this.profileImage,
       this.reactions = 0,
-      this.isBookedMark});
+      required this.isBookedMark});
 
   final Function()? onPressedBookmark;
   final Function()? onPressedRemove;
@@ -29,7 +29,7 @@ class CustomPostContainerWidget extends StatelessWidget {
   final String? profileName;
   final String? profileImage;
   final int? reactions;
-  final bool? isBookedMark;
+  final bool isBookedMark;
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +73,9 @@ class CustomPostContainerWidget extends StatelessWidget {
                 Row(
                   children: [
                     CustomIconButtons(
-                      iconButton: Icons.bookmark_add_outlined,
+                      iconButton: isBookedMark
+                          ? Icons.bookmark
+                          : Icons.bookmark_add_outlined,
                       onPressed: onPressedBookmark,
                     ),
                     CustomIconButtons(

@@ -2,34 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hw2/custom_widgets/custom_container_widget.dart';
 import 'package:flutter_hw2/data/data_model.dart';
 import 'package:flutter_hw2/data/global_variables.dart';
-import 'package:flutter_hw2/data/reading_from_json.dart';
 import 'package:flutter_hw2/screens/single_post_screen.dart';
 
-class ReadingListPage extends StatefulWidget {
-  const ReadingListPage({super.key});
+class CustomPostList extends StatefulWidget {
+  final List<PostsDataModel> posts;
+
+  const CustomPostList({Key? key, required this.posts}) : super(key: key);
 
   @override
-  State<ReadingListPage> createState() => _ReadingListPageState();
+  State<CustomPostList> createState() => _CustomPostListState();
 }
 
-class _ReadingListPageState extends State<ReadingListPage> {
-  @override
-  void initState() {
-    super.initState();
-
-    for (var post in jsonData['posts']) {
-      readingList.add(PostsDataModel.fromJson(post));
-    }
-    bookmarkedPosts =
-        readingList.where((post) => post.isBookedmark == true).toList();
-  }
-
+class _CustomPostListState extends State<CustomPostList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: bookmarkedPosts.length,
+      itemCount: widget.posts.length,
       itemBuilder: (context, index) {
-        var post = bookmarkedPosts[index];
+        var post = widget.posts[index];
         return GestureDetector(
           onTap: () {
             _navigateToSinglePost(context, post);
@@ -42,11 +32,9 @@ class _ReadingListPageState extends State<ReadingListPage> {
             profileImage: post.profileImage,
             postImage: post.postImage,
             date: post.date,
+            readTime: post.readingTime,
             onPressedBookmark: () {
-              setState(() {
-                post.toggleReadInList();
-                bookmarkedPosts.remove(post);
-              });
+              _isBookedmark(post);
             },
             onPressedOptions: () {},
             onPressedRemove: () {},
@@ -54,6 +42,17 @@ class _ReadingListPageState extends State<ReadingListPage> {
         );
       },
     );
+  }
+
+  void _isBookedmark(PostsDataModel post) {
+    setState(() {
+      post.toggleReadInList();
+      if (post.isBookedmark!) {
+        readingList.add(post);
+      } else {
+        readingList.remove(post);
+      }
+    });
   }
 
   void _navigateToSinglePost(BuildContext context, PostsDataModel post) {

@@ -1,50 +1,51 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-// class CustomBottomNavigationBar extends StatefulWidget {
-//   const CustomBottomNavigationBar({Key? key}) : super(key: key);
+class CustomBottomNavigationBar extends StatefulWidget {
+  final int currentIndex;
+  final ValueChanged<int> onTap;
 
-//   @override
-//   _CustomBottomNavigationBarState createState() =>
-//       _CustomBottomNavigationBarState();
-// }
+  const CustomBottomNavigationBar({
+    Key? key,
+    required this.currentIndex,
+    required this.onTap,
+  }) : super(key: key);
 
-// class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
-//   int _currentIndex = 0;
+  @override
+  CustomBottomNavigationBarState createState() =>
+      CustomBottomNavigationBarState();
+}
 
-//   void _onItemTapped(int index) {
-//     setState(() {
-//       _currentIndex = index;
-//     });
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Theme(
-//       data: Theme.of(context).copyWith(
-//         canvasColor: Colors.black,
-//         primaryColor: Colors.white,
-//         unselectedWidgetColor: Colors.grey,
-//       ),
-//       child: BottomNavigationBar(
-//         items: const [
-//           BottomNavigationBarItem(
-//             icon: Icon(Icons.home),
-//             label: 'Home',
-//           ),
-//           BottomNavigationBarItem(
-//             icon: Icon(Icons.business),
-//             label: 'Business',
-//           ),
-//           BottomNavigationBarItem(
-//             icon: Icon(Icons.school),
-//             label: 'School',
-//           ),
-//           BottomNavigationBarItem(
-//             icon: Icon(Icons.settings),
-//             label: 'Settings',
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
+class CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
+  @override
+  Widget build(BuildContext context) {
+    return Theme(
+      data: Theme.of(context).copyWith(
+        canvasColor: Colors.black,
+        primaryColor: Colors.white,
+        unselectedWidgetColor: Colors.grey,
+      ),
+      child: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bookmarks_outlined),
+            label: 'Reading List',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_2_outlined),
+            label: 'Profile',
+          ),
+        ],
+        currentIndex: widget.currentIndex,
+        onTap: widget.onTap,
+      ),
+    );
+  }
+}
