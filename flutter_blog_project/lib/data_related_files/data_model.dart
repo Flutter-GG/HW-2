@@ -5,6 +5,7 @@ class BlogModel {
   String image;
   String date;
   String authorName;
+  String avatarImg;
   int userId;
   int password;
 
@@ -16,6 +17,8 @@ class BlogModel {
       required this.date,
       required this.authorName,
       required this.userId,
+      this.avatarImg =
+          "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg",
       this.password = 1234});
 
   factory BlogModel.fromJson(Map json) {
@@ -26,6 +29,7 @@ class BlogModel {
         image: json['image'],
         date: json['date'],
         authorName: json['authorName'],
+        avatarImg: json['avatarImg'],
         userId: json['userId']);
   }
 }

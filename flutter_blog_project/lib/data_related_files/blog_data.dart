@@ -4,13 +4,15 @@ List blogData = [
     "postId": 1,
     "title": 'ChatGPT Vs Bard: Which is better for coding?',
     "content":
-        'For programmers Generative AI offers tangible benefits It helps with writing and debugging code, making our busy lives a bit easier as a result. But there are now competing tools like ChatGPT and Bard, which begs the question: which one is best for me to use?We compare these tools against each other in the ultimate battle to see which is the most feature-rich tool right now for programming purposes',
+        'For programmers Generative AI offers tangible benefits It helps with writing and debugging code, making our busy lives a bit easier as a result. But there are now competing tools like ChatGPT and Bard, which begs the question: which one is best for me to use?We compare these tools against each other in the ultimate battle to see which is the most feature-rich tool right now for programming purposes.',
     "image":
         'https://www.pluralsight.com/content/dam/ps/images/resource-center/blog/header-hero-images/ChatGPT-vs-Bard-c.png',
     "date": '12-3-2023',
     "authorName": 'Jeremy Morgan',
     "userId": 48,
-    "password": 1234
+    "password": 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 2,
@@ -22,7 +24,9 @@ List blogData = [
     "date": '20-3-2023',
     "authorName": 'Steve Buchanan',
     "userId": 12,
-    "password": 1234
+    "password": 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 3,
@@ -34,7 +38,9 @@ List blogData = [
     'date': '12-4-2023',
     'authorName': 'Jeremy Morgan',
     'userId': 48,
-    'password': 1234
+    'password': 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 4,
@@ -46,7 +52,9 @@ List blogData = [
     'date': '12-3-2023',
     'authorName': 'Jeremy Morgan',
     'userId': 20,
-    'password': 1234
+    'password': 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 5,
@@ -58,7 +66,9 @@ List blogData = [
     'date': '2-5-2023',
     'authorName': 'Flow Marketing team',
     'userId': 15,
-    'password': 1234
+    'password': 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 6,
@@ -70,7 +80,9 @@ List blogData = [
     'date': '17-6-2023',
     'authorName': 'Mike Vanbuskirk',
     'userId': 60,
-    'password': 1234
+    'password': 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 7,
@@ -82,7 +94,9 @@ List blogData = [
     'date': '12-3-2023',
     'authorName': 'Steve Buchanan',
     'userId': 12,
-    'password': 1234
+    'password': 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 8,
@@ -94,7 +108,9 @@ List blogData = [
     'date': '1-8-2023',
     'authorName': 'William Boyd',
     'userId': 34,
-    'password': 1234
+    'password': 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 9,
@@ -106,7 +122,9 @@ List blogData = [
     'date': '12-3-2023',
     'authorName': 'Steve Buchanan',
     'userId': 12,
-    'password': 1234
+    'password': 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   },
   {
     "postId": 10,
@@ -118,6 +136,8 @@ List blogData = [
     'date': '8-4-2023',
     'authorName': 'Lars Klint',
     'userId': 53,
-    'password': 1234
+    'password': 1234,
+    "avatarImg":
+        "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-avatar-icon-png-image_695765.jpg"
   }
 ];
