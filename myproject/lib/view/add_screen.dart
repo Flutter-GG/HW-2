@@ -106,24 +106,35 @@ class _AddpageState extends State<Addpage> {
                     hintText: "enter subject"),
               ),
             ),
-            ElevatedButton(
- 
-                onPressed: () {
-                  Blog newblog = Blog(
-                    id: idController.text,
-                    title: titlecontroller.text,
-                    author: authorcontroller.text,
-                    content: contentcontroller.text,
-                    image:
-                        "https://duet-cdn.vox-cdn.com/thumbor/0x0:1290x860/1200x800/filters:focal(645x430:646x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24841806/IMG_1562.jpg",
-                    subject: subjectcontroller.text,
-                    min: mincontroller.text,
-                  );
-                  listBlog.add(newblog);
-                  setState(() {});
-                  context.gitpush(Home());
-                },
-                child: Text("Add Blog"))
+            SizedBox(
+              height: 40,
+            ),
+            SizedBox(
+              height: 50,
+              width: 300,
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.black,
+                  ),
+                  onPressed: () {
+                    Blog newblog = Blog(
+                      id: idController.text,
+                      title: titlecontroller.text,
+                      author: authorcontroller.text,
+                      content: contentcontroller.text,
+                      image:
+                          "https://duet-cdn.vox-cdn.com/thumbor/0x0:1290x860/1200x800/filters:focal(645x430:646x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24841806/IMG_1562.jpg",
+                      subject: subjectcontroller.text,
+                      min: mincontroller.text,
+                    );
+                    listBlog.add(newblog);
+                    setState(() {});
+                    context.gitpush(Home());
+                  },
+                  child: Text(
+                    "Add Blog",
+                  )),
+            )
           ],
         ),
       ),
