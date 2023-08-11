@@ -4,3 +4,4 @@ List<PostsDataModel> postsList = [];
 List<PostsDataModel> readingList = [];
 List<PostsDataModel> searchList = [];
 List<PostsDataModel> bookmarkedPosts = [];
+List<PostsDataModel> userPosts = [];

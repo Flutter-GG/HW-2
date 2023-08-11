@@ -49,7 +49,7 @@ class PostsDataModel {
           json['photos'] != null ? List<String?>.from(json['photos']) : null,
     );
   }
-  void toggleReadInList() {
+  void toggleBookmark() {
     isBookedmark = !isBookedmark!;
   }
 }

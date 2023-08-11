@@ -17,7 +17,8 @@ class CustomPostContainerWidget extends StatelessWidget {
       this.profileName = 'profile name',
       this.profileImage,
       this.reactions = 0,
-      required this.isBookedMark});
+      required this.isBookedMark,
+      this.userId});
 
   final Function()? onPressedBookmark;
   final Function()? onPressedRemove;
@@ -29,6 +30,7 @@ class CustomPostContainerWidget extends StatelessWidget {
   final String? profileName;
   final String? profileImage;
   final int? reactions;
+  final int? userId;
   final bool isBookedMark;
 
   @override
@@ -54,7 +56,7 @@ class CustomPostContainerWidget extends StatelessWidget {
                       const SizedBox(
                         width: 10,
                       ),
-                      Text('$profileName')
+                      Text('$profileName، UserID: $userId')
                     ]),
                     Text(
                       '$title',

@@ -25,6 +25,7 @@ class _CustomPostListState extends State<CustomPostList> {
             _navigateToSinglePost(context, post);
           },
           child: CustomPostContainerWidget(
+            userId: post.usedId,
             isBookedMark: post.isBookedmark ?? false,
             profileName: post.userName,
             title: post.title,
@@ -46,7 +47,7 @@ class _CustomPostListState extends State<CustomPostList> {
 
   void _isBookedmark(PostsDataModel post) {
     setState(() {
-      post.toggleReadInList();
+      post.toggleBookmark();
       if (post.isBookedmark!) {
         readingList.add(post);
       } else {
