@@ -23,9 +23,7 @@ class _AddpageState extends State<Addpage> {
     return Scaffold(
       appBar: AppBar(title: Text("Add content"), actions: [
         IconButton(
-            onPressed: () => Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Home())),
-            icon: Icon(Icons.home)),
+            onPressed: () => context.gitpush(Home()), icon: Icon(Icons.home)),
       ]),
       body: SingleChildScrollView(
         child: Column(
@@ -74,11 +72,18 @@ class _AddpageState extends State<Addpage> {
                   );
                   listBlog.add(newblog);
                   setState(() {});
+                  context.gitpush(Home());
                 },
                 child: Text("data"))
           ],
         ),
       ),
     );
+  }
+}
+
+extension num on BuildContext {
+  gitpush(StatefulWidget a) {
+    return Navigator.push(this, MaterialPageRoute(builder: (context) => a));
   }
 }
