@@ -58,7 +58,7 @@ class _SearchState extends State<Search> {
     searchText = searchText.toLowerCase();
     if (searchText.isEmpty) {
       setState(() {
-        listBlog1 = listBlog;
+        listBlog = listBlog;
       });
     } else {
       List<Blog> filteredProducts = [];
