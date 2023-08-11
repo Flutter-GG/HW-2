@@ -15,13 +15,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            leading: const Align(
-          alignment: Alignment.center,
-          child: Text(
-            "Home",
-            style: TextStyle(fontSize: 20),
+          leading: const Align(
+            alignment: Alignment.center,
+            child: Text(
+              "Home",
+              style: TextStyle(fontSize: 20),
+            ),
           ),
-        )),
+        ),
         body: ListView.builder(
             itemCount: listBlog.length,
             itemBuilder: (context, index) {
