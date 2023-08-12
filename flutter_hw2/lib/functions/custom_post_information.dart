@@ -3,6 +3,7 @@ import 'package:flutter_hw2/custom_widgets/custom_container_widget.dart';
 import 'package:flutter_hw2/data/data_model.dart';
 import 'package:flutter_hw2/data/global_variables.dart';
 import 'package:flutter_hw2/screens/single_post_screen.dart';
+import 'package:flutter_hw2/screens/updating_post_screen.dart';
 
 class CustomPostList extends StatefulWidget {
   final List<PostsDataModel> posts;
@@ -37,10 +38,12 @@ class _CustomPostListState extends State<CustomPostList> {
             onPressedBookmark: () {
               _isBookedmark(post);
             },
-            onPressedOptions: () {
+            onPressedRemove: () {
               _onPressedRemove(post);
             },
-            onPressedRemove: () {},
+            onPressedOptions: () {
+              _navigateToEditPost(context, post);
+            },
           ),
         );
       },
@@ -70,6 +73,19 @@ class _CustomPostListState extends State<CustomPostList> {
       MaterialPageRoute(
         builder: (context) => SinglePostPage(post: post),
       ),
+    );
+  }
+
+  void _navigateToEditPost(BuildContext context, PostsDataModel post) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => EditPostPage(post: post),
+      ),
+    ).then(
+      (value) => {
+        if (value == "update") {setState(() {})}
+      },
     );
   }
 }
