@@ -1,6 +1,11 @@
 import 'package:blog_app/App/Views/Screens/signup_view.dart';
+import 'package:blog_app/App/utilities/extensions/strings.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import '../../utilities/extensions/colors.dart';
+import '../Widgets/AuthWidgets/custom_button.dart';
+import 'login_view.dart';
+
+
 
 class AuthView extends StatefulWidget {
   const AuthView({super.key});
@@ -14,7 +19,7 @@ class _AuthViewState extends State<AuthView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0XFFEFEFEF),
+        backgroundColor: CustomColor.primary,
         elevation: 0,
       ),
       body: Center(
@@ -22,68 +27,34 @@ class _AuthViewState extends State<AuthView> {
           children: [
             Image.asset('assets/images/BLOGD.png'),
             const SizedBox(height: 20),
-            Text("Personal Blogging Partner",
-                style: GoogleFonts.montserrat(
-                  fontSize: 16,
-                )),
+            "Personal Blogging Partner".montserrat,
             const SizedBox(height: 50),
             Image.asset('assets/images/Grad.png'),
             const SizedBox(height: 50),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const SignUpView()));
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0XFFEFEFEF),
-                  elevation: 0,
-                  minimumSize: const Size(300, 60),
-                  side: const BorderSide(
-                    color: Color(0XFF000000),
-                    width: 2,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-                child: Text('Login',
-                    style: GoogleFonts.montserrat(
-                      fontSize: 16,
-                      color: const Color(0XFF000000),
-                    ))),
+            CustomButton(
+              label: 'Login',
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LogInView()));
+              },
+            ),
             Padding(
               padding: const EdgeInsets.all(10.0),
-              child: Text("New here?",
-                  style: GoogleFonts.montserrat(
-                    fontSize: 12,
-                  )),
+              child: "New here?".montserrat,
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const SignUpView()));
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0XFF000000),
-                  elevation: 0,
-                  minimumSize: const Size(300, 60),
-                  side: const BorderSide(
-                    color: Color(0XFF000000),
-                    width: 2,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-                child: Text('Register',
-                    style: GoogleFonts.montserrat(
-                      fontSize: 16,
-                      color: const Color(0XFFEFEFEF),
-                    )))
+            CustomButton(
+              label: 'Register',
+              backgroundColor: CustomColor.black,
+              textColor: CustomColor.white,
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignUpView()));
+              },
+            )
           ],
         ),
       ),
