@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/* this file is my custom Border Radius for body image of the post */
+
 class CustomBorderRadiusImages extends StatelessWidget {
   const CustomBorderRadiusImages(
       {super.key, this.borderRadiusImage, this.width = 80, this.height = 50});

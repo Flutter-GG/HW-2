@@ -5,6 +5,8 @@ import 'package:flutter_hw2/data/data_model.dart';
 import 'package:flutter_hw2/data/global_variables.dart';
 import 'package:flutter_hw2/data/reading_from_json.dart';
 
+/* this file for home page or all posts in the data set */
+
 class AllPostsPage extends StatefulWidget {
   const AllPostsPage({super.key});
 
@@ -15,12 +17,8 @@ class AllPostsPage extends StatefulWidget {
 class _AllPostsPage extends State<AllPostsPage> {
   @override
   void initState() {
-    postsList.clear();
     super.initState();
-
-    for (var post in jsonData['posts']) {
-      postsList.add(PostsDataModel.fromJson(post));
-    }
+    _loadPosts();
   }
 
   @override
@@ -30,5 +28,13 @@ class _AllPostsPage extends State<AllPostsPage> {
           title: 'Home',
         ),
         body: CustomPostList(posts: postsList));
+  }
+
+  void _loadPosts() {
+    if (postsList.isEmpty) {
+      for (var post in jsonData['posts']) {
+        postsList.add(PostsDataModel.fromJson(post));
+      }
+    }
   }
 }

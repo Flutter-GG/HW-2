@@ -5,6 +5,8 @@ import 'package:flutter_hw2/data/data_model.dart';
 import 'package:flutter_hw2/data/global_variables.dart';
 import 'package:flutter_hw2/data/reading_from_json.dart';
 
+/* this is  for reading posts page, aka bookmarks */
+
 class ReadingListPage extends StatefulWidget {
   const ReadingListPage({super.key});
 

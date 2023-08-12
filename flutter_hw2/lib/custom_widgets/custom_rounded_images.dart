@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/* this file is my custom profile rounded images */
+
 class CustomRoundedImages extends StatelessWidget {
   const CustomRoundedImages(
       {super.key, this.roundedImage, this.width = 20, this.height = 20});

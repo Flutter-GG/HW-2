@@ -3,6 +3,7 @@ import 'package:flutter_hw2/custom_widgets/custom_app_bar_widget.dart';
 import 'package:flutter_hw2/functions/custom_post_information.dart';
 import 'package:flutter_hw2/data/global_variables.dart';
 
+/* this is for searching in the postsList */
 class SearchPostsPage extends StatefulWidget {
   const SearchPostsPage({super.key});
 

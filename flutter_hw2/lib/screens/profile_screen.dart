@@ -4,6 +4,8 @@ import 'package:flutter_hw2/functions/custom_post_information.dart';
 import 'package:flutter_hw2/data/data_model.dart';
 import 'package:flutter_hw2/data/global_variables.dart';
 
+/* this is for profile page, the user is userId 2 only for now */
+
 class ProfilePosts extends StatefulWidget {
   final int usedId;
 

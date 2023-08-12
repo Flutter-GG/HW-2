@@ -4,20 +4,24 @@ import 'package:flutter_hw2/custom_widgets/custom_icon_buttons.dart';
 import 'package:flutter_hw2/custom_widgets/extensions.dart';
 import 'package:flutter_hw2/custom_widgets/custom_rounded_images.dart';
 
+/* this file is my custom container for the post, for home, search, reading list and profile posts */
+
 class CustomPostContainerWidget extends StatelessWidget {
   const CustomPostContainerWidget(
       {super.key,
       this.onPressedBookmark,
       this.onPressedRemove,
       this.onPressedOptions,
-      this.postImage,
+      this.postImage =
+          'https://th.bing.com/th/id/OIP.yqgrW7qSDXZgjULh3iuuGgHaHa?pid=ImgDet&rs=1',
       this.readTime = 'reading time',
       this.date = 'date',
       this.title = 'title',
       this.profileName = 'profile name',
-      this.profileImage,
+      this.profileImage =
+          'https://th.bing.com/th/id/OIP.yqgrW7qSDXZgjULh3iuuGgHaHa?pid=ImgDet&rs=1',
       this.reactions = 0,
-      required this.isBookedMark,
+      this.isBookedMark = false,
       this.userId});
 
   final Function()? onPressedBookmark;

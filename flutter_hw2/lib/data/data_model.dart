@@ -1,11 +1,10 @@
+/* this is my data model */
 class PostsDataModel {
   bool? isBookedmark;
   int? id;
   int? usedId;
   int? reactions;
-  List<String?>? tags;
-  List<String?>? video;
-  List<String?>? photos;
+
   String? date;
   String? body;
   String? title;
@@ -18,10 +17,7 @@ class PostsDataModel {
       {this.id,
       this.date,
       this.body,
-      this.tags,
-      this.video,
       this.title,
-      this.photos,
       this.usedId,
       this.userName,
       this.reactions,
@@ -43,10 +39,6 @@ class PostsDataModel {
       readingTime: json['reading_time'],
       profileImage: json['profile_image'],
       isBookedmark: json['readin_list'],
-      tags: json['tags'] != null ? List<String>.from(json['tags']) : null,
-      video: json['video'] != null ? List<String?>.from(json['video']) : null,
-      photos:
-          json['photos'] != null ? List<String?>.from(json['photos']) : null,
     );
   }
   void toggleBookmark() {

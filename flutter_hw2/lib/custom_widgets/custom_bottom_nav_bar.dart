@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/* this file is my custom bottom navigation bar to change the page */
+
 class CustomBottomNavigationBar extends StatefulWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;

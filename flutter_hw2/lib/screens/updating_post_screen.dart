@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hw2/data/data_model.dart';
 
+/* this is for updating the post, change the body anf the title of the post */
 class EditPostPage extends StatefulWidget {
   final PostsDataModel post;
 

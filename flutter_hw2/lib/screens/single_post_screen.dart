@@ -7,6 +7,8 @@ import 'package:flutter_hw2/custom_widgets/extensions.dart';
 import 'package:flutter_hw2/data/data_model.dart';
 import 'package:flutter_hw2/data/global_variables.dart';
 
+/* this is for single post to read the body of the post */
+
 class SinglePostPage extends StatefulWidget {
   final PostsDataModel post;
 

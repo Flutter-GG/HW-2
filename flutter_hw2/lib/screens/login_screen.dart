@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hw2/screens/init_page.dart';
 
+/* this is for login page, the first page in the app, current user is dreams and
+password is 12345 for testing there is no way to use another user now */
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -52,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                           _userName.isNotEmpty &&
                           _password == '12345' &&
                           _userName.replaceAll(' ', '').toLowerCase() ==
-                              'mohammedalsahli') {
+                              'dreams') {
                         Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(

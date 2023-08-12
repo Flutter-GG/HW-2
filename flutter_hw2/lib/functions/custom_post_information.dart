@@ -5,6 +5,8 @@ import 'package:flutter_hw2/data/global_variables.dart';
 import 'package:flutter_hw2/screens/single_post_screen.dart';
 import 'package:flutter_hw2/screens/updating_post_screen.dart';
 
+/* this file for functions to handel read,update and remove of the post an red the post body */
+
 class CustomPostList extends StatefulWidget {
   final List<PostsDataModel> posts;
 
