@@ -37,7 +37,9 @@ class _CustomPostListState extends State<CustomPostList> {
             onPressedBookmark: () {
               _isBookedmark(post);
             },
-            onPressedOptions: () {},
+            onPressedOptions: () {
+              _onPressedRemove(post);
+            },
             onPressedRemove: () {},
           ),
         );
@@ -49,10 +51,16 @@ class _CustomPostListState extends State<CustomPostList> {
     setState(() {
       post.toggleBookmark();
       if (post.isBookedmark!) {
-        readingList.add(post);
+        bookmarkedPostsList.add(post);
       } else {
-        readingList.remove(post);
+        bookmarkedPostsList.remove(post);
       }
+    });
+  }
+
+  void _onPressedRemove(PostsDataModel post) {
+    setState(() {
+      postsList.remove(post);
     });
   }
 

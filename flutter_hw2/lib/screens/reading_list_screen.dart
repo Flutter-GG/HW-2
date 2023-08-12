@@ -18,10 +18,10 @@ class _ReadingListPageState extends State<ReadingListPage> {
     super.initState();
 
     for (var post in jsonData['posts']) {
-      readingList.add(PostsDataModel.fromJson(post));
+      bookmarkedPostsList.add(PostsDataModel.fromJson(post));
     }
-    bookmarkedPosts =
-        readingList.where((post) => post.isBookedmark == true).toList();
+    bookmarkedPostsList =
+        bookmarkedPostsList.where((post) => post.isBookedmark == true).toList();
   }
 
   @override
@@ -30,6 +30,6 @@ class _ReadingListPageState extends State<ReadingListPage> {
         appBar: const CustomAppBar(
           title: 'Reading List',
         ),
-        body: CustomPostList(posts: bookmarkedPosts));
+        body: CustomPostList(posts: bookmarkedPostsList));
   }
 }

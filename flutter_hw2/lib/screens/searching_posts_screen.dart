@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hw2/custom_widgets/custom_app_bar_widget.dart';
 import 'package:flutter_hw2/functions/custom_post_information.dart';
-import 'package:flutter_hw2/data/data_model.dart';
 import 'package:flutter_hw2/data/global_variables.dart';
 
 class SearchPostsPage extends StatefulWidget {
@@ -12,8 +11,6 @@ class SearchPostsPage extends StatefulWidget {
 }
 
 class _SearchPostsPageState extends State<SearchPostsPage> {
-  List<PostsDataModel> searchResults = [];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,21 +22,21 @@ class _SearchPostsPageState extends State<SearchPostsPage> {
           TextField(
             onSubmitted: (value) {
               setState(() {
-                searchResults.clear();
+                searchList.clear();
               });
 
               for (var post in postsList) {
                 if (post.title?.toLowerCase().contains(value.toLowerCase()) ==
                     true) {
                   setState(() {
-                    searchResults.add(post);
+                    searchList.add(post);
                   });
                 }
               }
             },
           ),
           Expanded(
-            child: CustomPostList(posts: searchResults),
+            child: CustomPostList(posts: searchList),
           ),
         ],
       ),

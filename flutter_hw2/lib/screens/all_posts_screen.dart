@@ -15,6 +15,7 @@ class AllPostsPage extends StatefulWidget {
 class _AllPostsPage extends State<AllPostsPage> {
   @override
   void initState() {
+    postsList.clear();
     super.initState();
 
     for (var post in jsonData['posts']) {
