@@ -88,6 +88,6 @@ class _AddPostPageState extends State<AddPostPage> {
         postsList.add(newPost);
       });
     }
-    Navigator.pop(context);
+    Navigator.pop(context, "addedPost");
   }
 }

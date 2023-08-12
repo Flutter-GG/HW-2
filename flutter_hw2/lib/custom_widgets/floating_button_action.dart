@@ -22,6 +22,10 @@ class CustomFloatingbuttonActionState
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const AddPostPage()),
+          ).then(
+            (value) => {
+              if (value == "addedPost") {setState(() {})}
+            },
           );
         },
         child: const Icon(Icons.add));

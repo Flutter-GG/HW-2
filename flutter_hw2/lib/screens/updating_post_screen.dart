@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hw2/custom_widgets/custom_app_bar_widget.dart';
 import 'package:flutter_hw2/data/data_model.dart';
 
 /* this is for updating the post, change the body anf the title of the post */
@@ -26,9 +27,7 @@ class _EditPostPageState extends State<EditPostPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Edit Post'),
-      ),
+      appBar: const CustomAppBar(title: 'Edit Post'),
       body: Container(
         padding: const EdgeInsets.all(8.0),
         child: Column(
