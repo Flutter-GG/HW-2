@@ -7,7 +7,7 @@ The first page is the login page:
 ![image](https://github.com/Lama-Aldhafeeri/HW-2/assets/84765301/916bd568-c6fa-4021-a607-2eea10ce9d10)
 
 
-If the user tries to log in without entering any id the message below will be shown:
+If the user tries to log in without entering any id or entered not existing id the message below will be shown:
 (The valid ids in the data are 1 and 2 )
 
 ![image](https://github.com/Lama-Aldhafeeri/HW-2/assets/84765301/320744bf-97d3-4642-b886-61ad5a21ff31)
@@ -23,7 +23,7 @@ The user can view a single blog by clicking on any blog card:
 ![image](https://github.com/Lama-Aldhafeeri/HW-2/assets/84765301/834fcfbe-185f-49ad-9a31-9670c3336a8a)
 
 
-Also, the user can save the blog to bookmark the page:
+Also, the user can save the blog to bookmark page or remove it :
 
 ![image](https://github.com/Lama-Aldhafeeri/HW-2/assets/84765301/5b220089-9e52-420d-8ce8-312f55726708)
 
