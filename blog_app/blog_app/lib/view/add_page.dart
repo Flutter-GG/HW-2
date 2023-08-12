@@ -68,7 +68,7 @@ class AddNewBlog extends StatelessWidget {
 
                 final newBlog = Blog(
                     blogTitle: titleController!.text,
-                    blogDescription: descriptionController!.text,
+                    blogDescription: descriptionController!.text ?? '',
                     blogContent: contentController!.text,
                     authorName: userData.isEmpty ? 'not found' : userData[0],
                     authorId: userId,

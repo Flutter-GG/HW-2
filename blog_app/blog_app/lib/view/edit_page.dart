@@ -128,7 +128,7 @@ class _EditBlogState extends State<EditBlog> {
         });
       },
       child: TextWidget(
-        data: widget.blog.blogDescription!,
+        data: widget.blog.blogDescription ?? '',
         size: 18,
       ),
     );

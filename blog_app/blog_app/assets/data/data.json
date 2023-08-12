@@ -35,6 +35,25 @@
     "user_profile_photo":
         "https://www.rtassociates.co/wp-content/uploads/2022/12/image-Edited.png",
     "bookmark": false
+  },
+  {
+    "author_id": 2,
+    "author_name": "Walter Rhein",
+    "author_profile_photo":
+        "https://www.upgrade100.com/img/speakers/w284h360/Florian_Will_155862643688797500.jpg",
+    "blog_image":
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*xrU0nbs854_rZlq3.jpeg",
+    "blog_title":
+        "X Marks The Spot Where Musk Buried Twitters Brand",
+    "blog_description":
+        null,
+    "blog_content":
+        "How much does it cost to ruin a brand? Apparently $44 billion, if Elon Musk is any indication. This week, Musk finally completed his planned rebranding of Twitter. The move started back in April, when Twitter, Inc. was changed to X Corp. This week, the familiar Twitter bird logo was replaced with a simple, stylized “X” logo. The rest of rebranding was a bit of struggle, however. Most of the documentation still refers to Twitter and tweets. Musk moved to take down the Twitter sign from the companys San Francisco headquarters, but that project was stalled by the fact that Musk failed to tell the property owners, causing the police to be called.",
+    "user_id": 1,
+    "user_name": "Malky McEwan",
+    "user_profile_photo":
+        "https://www.rtassociates.co/wp-content/uploads/2022/12/image-Edited.png",
+    "bookmark": false
   }
 ]
 }

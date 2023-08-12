@@ -43,7 +43,7 @@ class _BlogCardState extends State<BlogCard> {
                   ),
                   Spaces.spacesH8,
                   TextWidget(
-                    data: widget.blog.blogDescription!,
+                    data: widget.blog.blogDescription ?? '',
                     textColor: Colors.black38,
                     size: 15,
                   ),

@@ -37,7 +37,7 @@ class BlogInfo extends StatelessWidget {
                     ),
                     Spaces.spacesH8,
                     TextWidget(
-                      data: blog.blogDescription!,
+                      data: blog.blogDescription ?? '',
                       size: 18,
                     ),
                     Spaces.spacesH16,
