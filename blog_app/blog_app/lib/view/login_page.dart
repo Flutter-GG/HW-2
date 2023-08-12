@@ -1,4 +1,5 @@
 import 'package:blog_app/extention/size.dart';
+import 'package:blog_app/main.dart';
 import 'package:blog_app/view/init_page.dart';
 import 'package:blog_app/widgets/button_widget.dart';
 import 'package:blog_app/widgets/text_widget.dart';
@@ -34,25 +35,34 @@ class Login extends StatelessWidget {
             child: ButtonWidget(
               text: 'Login',
               onPressed: () {
+                bool isFonund = false;
+                final snackBar = SnackBar(
+                  content: const TextWidget(
+                    data: 'Please enter valid data',
+                    textColor: Color.fromARGB(255, 47, 2, 2),
+                    size: 15,
+                  ),
+                  backgroundColor: Colors.red[100]!,
+                );
                 if (idController!.text == '') {
-                  final snackBar = SnackBar(
-                    content: const TextWidget(
-                      data: 'Please enter valid data',
-                      textColor: Color.fromARGB(255, 47, 2, 2),
-                      size: 15,
-                    ),
-                    backgroundColor: Colors.red[100]!,
-                  );
                   ScaffoldMessenger.of(context).showSnackBar(snackBar);
                 } else {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => InitPage(
-                        userId: int.parse(idController!.text),
-                      ),
-                    ),
-                  );
+                  for (var element in blogsList) {
+                    if (element.userId.toString() == idController!.text) {
+                      isFonund = true;
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InitPage(
+                            userId: int.parse(idController!.text),
+                          ),
+                        ),
+                      );
+                    }
+                  }
+                  if (isFonund == false) {
+                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                  }
                 }
               },
             ),
