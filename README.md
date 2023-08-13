@@ -1,52 +1,54 @@
-# HW-2
+<h1>HW-2</h1>
 
-## Description
+<h2>Description</h2>
 
-Create a Blog app using the Flutter framework. In the app, users should be able to view, add, delete, and update posts.
+<p>This is a blog app that allows a user to view all posts, view a single post in detail, add a new post, add a post to the user's bookmark, and search for a post using its title.</p>
 
-## Details
-1. Create your own JSON data, and Implement it to a global variable.
-2. Create at least 5 screens, including viewing all Post screen, a single post screen, reading list screen, adding a new post screen, updating a post screen, and search screen.
-3. Implement the option of adding a post to the Reading List, and removing it.
-4. Implement the ability to search a post by title.
- 
+<h2>Pages</h2>
 
-## Minimum Requirements
-1. Implement this design or similar.
-2. You must utilize the following widgets:
-   - Image
-   - AppBar
-   - TextField
-   - Row
-   - Column
-   - Icon
-   - Button
-   - ListView or other related widgets
-3. Create at least 5 screens, and provide navigation between these screens.
-4. Implement global variable management.
-5. Organize the Flutter project structure appropriately.
-6. Write a clean and well-organized code.
+<h3>View all posts</h3>
 
-<img width="276" alt="1" src="https://github.com/Flutter-GG/HW-2/assets/132256369/5db411f8-15fd-4ab9-9328-52ff285bfd63">
-<img width="276" alt="2" src="https://github.com/Flutter-GG/HW-2/assets/132256369/6970d437-2d02-495a-801f-7e2e0dc53b06">
-<img width="276" alt="3" src="https://github.com/Flutter-GG/HW-2/assets/132256369/316fe9ef-43c8-4c7b-9175-c3d377779723">
-<img width="276" alt="4" src="https://github.com/Flutter-GG/HW-2/assets/132256369/43b978d6-ab91-459e-9b2d-2e872f44b40c">
-<img width="276" alt="5" src="https://github.com/Flutter-GG/HW-2/assets/132256369/0518e305-329b-4a56-8af7-9c630a9cd8a3">
+<p>This is a page where all posts in the app are displayed. Each post card has actions, which include:</p>
 
+<ul>
+  <li><code>onTap()</code>: Redirects the user to the post page, displaying the full post.</li>
+  <li><code>onLongPress()</code>: Adds the post to the bookmark.</li>
+</ul>
 
-## Bonus:
-  - Create a login screen, and display all posts of the user on his profile screen (should create user id in each post in JSON data).
+<p>The page also has a button to create a new post.</p>
 
-## Submission:
-1. Flutter Project:
-   - Submit the complete Flutter project folder, including all necessary files.
-2. Screenshots of your app.
-3. GitHub Submission:
-   - Create a Fork from the project’s GitHub repository.
-   - Create a new branch with your name.
-   - Commit frequently with descriptive messages to show your progress.
-   - Finally, create a Pull Request to the project’s original repository.
+<img width="276" alt="View all posts" src="read_me_images/posts.PNG">
 
+<p>Additionally, the "View all posts" page has a search bar at the top, and it updates the list as the user types.</p>
 
-## Deadline: 
-13/08/2023  11:59 PM
+<img width="276" alt="Search bar" src="read_me_images/search.PNG">
+
+<h3>View a post</h3>
+
+<p>This page displays details about a single post.</p>
+
+<img width="276" alt="View a post" src="read_me_images/post.PNG">
+
+<h3>Bookmark</h3>
+
+<p>This page displays all the posts added to the bookmark, and a user can remove a post from the bookmark by double-tapping it.</p>
+
+<img width="276" alt="Bookmark" src="read_me_images/bookmark.PNG">
+
+<h3>New post</h3>
+
+<p>In this page, a user can post a new post by providing the post image URL, title, and description.</p>
+
+<img width="276" alt="New post" src="read_me_images/newpost.PNG">
+
+<h3>Bonus feature</h3>
+
+<p>The user can log in by entering their user ID. On the profile page, all the posts the user has posted would be displayed.</p>
+
+<h4>Login page</h4>
+
+<img width="276" alt="Login page" src="read_me_images/login.PNG">
+
+<h4>Profile page</h4>
+
+<img width="276" alt="Profile page" src="read_me_images/profile.PNG">
