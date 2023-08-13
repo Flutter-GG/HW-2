@@ -50,7 +50,7 @@ class _AddNewPostState extends State<AddNewPost> {
                 decoration: InputDecoration(
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: BColors.darkTextColor)),
-                    labelText: "new Body title"),
+                    labelText: "new Post Body"),
               ),
               Spacer(),
               Container(

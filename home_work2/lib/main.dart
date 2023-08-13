@@ -14,8 +14,6 @@ void main() {
   var stringPosts = postsFile.readAsStringSync();
 
   var postsData = json.decode(stringPosts);
-  print(WishList!.length.toString());
-  print('fll');
 
   for (var element in postsData["posts"]) {
     PostsList!.add(Posts.fromJson(element));

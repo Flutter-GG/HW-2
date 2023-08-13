@@ -25,10 +25,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           actions: [
             IconButton(
-              icon: Icon(Icons.bookmark_added_sharp),
+              icon: Icon(Icons.search_sharp),
               color: Colors.black,
               onPressed: () {
-                //context.push(screen: FavoriteScreen(post: ,));
+                // context.push(screen: FavoriteScreen(post: ,));
               },
             ),
           ]),
