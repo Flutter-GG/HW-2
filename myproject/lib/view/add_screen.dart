@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:myproject/main.dart';
 import 'package:myproject/model/my_model.dart';
 import 'package:myproject/view/home_screen.dart';
-import 'package:myproject/view/search_screen.dart';
 import 'package:myproject/view/utility/extension.dart';
 
 class Addpage extends StatefulWidget {

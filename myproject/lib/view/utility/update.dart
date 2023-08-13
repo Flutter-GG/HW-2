@@ -5,13 +5,13 @@ import 'package:myproject/model/my_model.dart';
 class EditScreen extends StatefulWidget {
   final Blog blogDataModel;
 
-  EditScreen({required this.blogDataModel});
+  const EditScreen({super.key, required this.blogDataModel});
 
   @override
-  _EditScreenState createState() => _EditScreenState();
+  EditScreenState createState() => EditScreenState();
 }
 
-class _EditScreenState extends State<EditScreen> {
+class EditScreenState extends State<EditScreen> {
   TextEditingController titleController = TextEditingController();
   TextEditingController contentController = TextEditingController();
 
@@ -49,11 +49,11 @@ class _EditScreenState extends State<EditScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             "Edit",
             style: TextStyle(color: Colors.black),
           ),
-          iconTheme: IconThemeData(color: Colors.black),
+          iconTheme: const IconThemeData(color: Colors.black),
           backgroundColor: Colors.white,
           elevation: 0,
         ),
@@ -63,18 +63,18 @@ class _EditScreenState extends State<EditScreen> {
             children: [
               TextField(
                 controller: titleController,
-                decoration: InputDecoration(labelText: 'Title'),
+                decoration: const InputDecoration(labelText: 'Title'),
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               TextField(
                 controller: contentController,
-                decoration: InputDecoration(labelText: 'Content'),
+                decoration: const InputDecoration(labelText: 'Content'),
                 maxLines: null,
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               ElevatedButton(
                 onPressed: _saveChanges,
-                child: Text('Save Changes'),
+                child: const Text('Save Changes'),
               ),
             ],
           ),
