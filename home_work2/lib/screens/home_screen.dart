@@ -6,6 +6,9 @@ import 'package:home_work2/components/post_card_widget.dart';
 import 'package:home_work2/constants/b_colors.dart';
 import 'package:home_work2/constants/b_spaces.dart';
 import 'package:home_work2/main.dart';
+import 'package:home_work2/screens/add_post_screen.dart';
+import 'package:home_work2/screens/favorite_screen.dart';
+import 'package:home_work2/utils/extensions/Navigations.dart';
 import 'package:home_work2/utils/extensions/Sizes.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,13 +23,30 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: BColors.primaryColor,
-      appBar: CustomAppBar(
-        title: "Home",
-        firstIcon: Icon(
-          Icons.notifications,
-          color: Colors.black,
+      appBar: AppBar(
+          backgroundColor: BColors.primaryColor,
+          title: Text(
+            "Home",
+            style: TextStyle(color: BColors.darkTextColor),
+          ),
+          actions: [
+            IconButton(
+              icon: Icon(Icons.bookmark_added_sharp),
+              color: Colors.black,
+              onPressed: () {
+                //  context.push(screen: FavoriteScreen());
+              },
+            ),
+          ]),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          context.push(screen: AddNewPost());
+        },
+        backgroundColor: BColors.primaryColor,
+        child: Icon(
+          Icons.add,
+          color: BColors.darkTextColor,
         ),
-        isLeading: false,
       ),
       body: ListView.builder(
         itemBuilder: (context, int index) {

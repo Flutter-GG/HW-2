@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:home_work2/constants/b_colors.dart';
 import 'package:home_work2/main.dart';
 import 'package:home_work2/models/posts_model.dart';
-import 'package:home_work2/screens/favorite_screen.dart';
 import 'package:home_work2/screens/home_screen.dart';
 import 'package:home_work2/screens/post_screen.dart';
 import 'package:home_work2/utils/extensions/Navigations.dart';
 import 'package:home_work2/utils/extensions/Sizes.dart';
 
-class PostCards extends StatefulWidget {
-  const PostCards({
+class FavoritPostCards extends StatefulWidget {
+  const FavoritPostCards({
     super.key,
     required this.post,
   });
@@ -17,14 +16,14 @@ class PostCards extends StatefulWidget {
   final Posts post;
 
   @override
-  State<PostCards> createState() => _PostCardsState();
+  State<FavoritPostCards> createState() => _FavoritPostCardsState();
 }
 
-class _PostCardsState extends State<PostCards> {
+class _FavoritPostCardsState extends State<FavoritPostCards> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => context.push(screen: PostsScreen(post: widget.post)),
+      onTap: () {},
       child: Container(
         color: BColors.secondaryColor,
         width: context.Width,
@@ -94,18 +93,6 @@ class _PostCardsState extends State<PostCards> {
                           TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
                     ),
                   ),
-                  IconButton(
-                      onPressed: () {
-                        print("added");
-                        WishList!.add(widget.post);
-                        context.push(
-                          screen: FavoriteScreen(post: widget.post),
-                        );
-                      },
-                      icon: Icon(
-                        Icons.bookmark,
-                        color: BColors.darkTextColor,
-                      )),
                 ],
               )
             ],
