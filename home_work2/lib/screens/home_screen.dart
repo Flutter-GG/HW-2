@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:home_work2/components/appbar_widget.dart';
 import 'package:home_work2/components/post_card_widget.dart';
 import 'package:home_work2/constants/b_colors.dart';
-import 'package:home_work2/constants/b_spaces.dart';
 import 'package:home_work2/main.dart';
 import 'package:home_work2/screens/add_post_screen.dart';
-import 'package:home_work2/screens/favorite_screen.dart';
 import 'package:home_work2/utils/extensions/Navigations.dart';
-import 'package:home_work2/utils/extensions/Sizes.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -34,13 +28,19 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: Icon(Icons.bookmark_added_sharp),
               color: Colors.black,
               onPressed: () {
-                //  context.push(screen: FavoriteScreen());
+                //context.push(screen: FavoriteScreen(post: ,));
               },
             ),
           ]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          context.push(screen: AddNewPost());
+          context.push(
+            screen: AddNewPost(
+              notifyParent: () {
+                setState(() {});
+              },
+            ),
+          );
         },
         backgroundColor: BColors.primaryColor,
         child: Icon(
