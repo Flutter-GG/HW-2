@@ -1,4 +1,5 @@
-# project2 in Flutter Bootcamp
+# projec2 in Flutter Bootcamp Application to follow the news
+
 
 Form Abdulelah Aljuraysi
 
