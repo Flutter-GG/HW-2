@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import '../Models/blog_model.dart';
 import '../Models/user_model.dart';
@@ -22,7 +22,17 @@ class BlogViewModel with ChangeNotifier {
   List<Blog> getAllBlogs() => _blogs;
 
   Blog? getBlogByTitle(String title) {
-    return _blogs.firstWhere((blog) => blog.title == title, orElse: () => Blog(title: '', authorName: '', summary: '', content: [], date: '', writerUserId: 100, category: '', readingDuration: '', authorAvatar: ''));
+    return _blogs.firstWhere((blog) => blog.title == title,
+        orElse: () => Blog(
+            title: '',
+            authorName: '',
+            summary: '',
+            content: [],
+            date: '',
+            writerUserId: 100,
+            category: '',
+            readingDuration: '',
+            authorAvatar: ''));
   }
 
   void updateBlog(User writer, String originalTitle, Blog updatedBlog) {
@@ -53,5 +63,11 @@ class BlogViewModel with ChangeNotifier {
     _blogs.addAll(loadedBlogs);
     notifyListeners();
   }
-}
 
+  List<Blog> searchBlogs(String searchTerm) {
+    return _blogs.where((blog) {
+      final lowerCaseTitle = blog.title.toLowerCase();
+      return lowerCaseTitle.contains(searchTerm);
+    }).toList();
+  }
+}

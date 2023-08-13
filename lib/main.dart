@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-
 import 'App/Views/Screens/auth_view.dart';
 import 'App/ViewModels/blog_viewmodel.dart';
 import 'App/utilities/extensions/colors.dart';

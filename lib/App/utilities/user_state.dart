@@ -1,12 +1,18 @@
 import 'package:flutter/foundation.dart';
 import '../Models/user_model.dart';
-import '../ViewModels/blog_viewmodel.dart';
-
 
 class UserState with ChangeNotifier {
- final List<User> _users = [];
-    final BlogViewModel blogViewModel = BlogViewModel();
+  final List<User> _users = [];
+
+  User? _currentUser;
+
   List<User> get users => _users;
+  User? get currentUser => _currentUser;
+
+  void setCurrentUser(User user) {
+    _currentUser = user;
+    notifyListeners();
+  }
 
   void addUser(User user) {
     _users.add(user);
@@ -14,17 +20,17 @@ class UserState with ChangeNotifier {
   }
 
 
-User defaultUser = User(
+  User defaultUser = User(
     userId: -1,
     userName: 'No User',
     userEmail: 'no-user@example.com',
     password: 'no-password',
-    profileImagePath: '',  
+    profileImagePath: '',
     blogsWritten: [],
-);
+  );
 
-User findUserByEmail(String email) {
-  return _users.firstWhere((user) => user.userEmail == email, orElse: () => defaultUser);
-}
-
+  User findUserByEmail(String email) {
+    return _users.firstWhere((user) => user.userEmail == email,
+        orElse: () => defaultUser);
+  }
 }

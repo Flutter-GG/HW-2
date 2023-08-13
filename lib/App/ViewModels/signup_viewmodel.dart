@@ -20,7 +20,8 @@ class UserViewModel {
   final ImagePicker _imagePicker = ImagePicker();
 
   Future<void> pickImage() async {
-    final XFile? image = await _imagePicker.pickImage(source: ImageSource.gallery);
+    final XFile? image =
+        await _imagePicker.pickImage(source: ImageSource.gallery);
     _imageStreamController.add(image);
   }
 
@@ -33,43 +34,17 @@ class UserViewModel {
     return users.indexWhere((user) => user.userEmail == email);
   }
 
-Result handleRegistration(BuildContext context) {
-  final user = User(
-    userId: DateTime.now().millisecondsSinceEpoch,
-    userName: userName,
-    userEmail: userEmail,
-    password: userPassword,
-    profileImagePath: "", 
-    blogsWritten: [],
-  );
-
- 
-  Provider.of<UserState>(context, listen: false).addUser(user);
-
-  return Result(isSuccess: true); 
-}
-
-
-
-  Result registerUser({
-    required String userName,
-    required String userEmail,
-    required String password,
-    required String confirmPassword,
-    required String profileImagePath,
-  }) {
- 
-
-    final newUser = User(
-      userId: users.length,
+  Result handleRegistration(BuildContext context) {
+    final user = User(
+      userId: DateTime.now().millisecondsSinceEpoch,
       userName: userName,
       userEmail: userEmail,
-      password: password,
-      profileImagePath: profileImagePath,
+      password: userPassword,
+      profileImagePath: "",
       blogsWritten: [],
     );
 
-    users.add(newUser);
+    Provider.of<UserState>(context, listen: false).addUser(user);
     return Result(isSuccess: true);
   }
 

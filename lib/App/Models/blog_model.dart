@@ -42,13 +42,13 @@ class Blog {
   }
 
   Future<List<Blog>> loadBlogsFromAssets() async {
-    // Load the JSON string from the assets
+   
     final jsonString = await rootBundle.loadString('assets/data/data.json');
 
-    // Decode the JSON to a dynamic structure
+  
     final decodedData = jsonDecode(jsonString);
 
-    // Parse the 'blogs' list to a list of Blog objects
+   
     final List<Blog> blogs = (decodedData['blogs'] as List)
         .map((jsonBlog) => Blog.fromJson(jsonBlog))
         .toList();

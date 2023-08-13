@@ -4,9 +4,9 @@ import 'package:blog_app/App/utilities/extensions/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
+import '../../Screens/writing_view.dart';
 import '/App/ViewModels/signup_viewmodel.dart';
 import '../../Screens/search_view.dart';
-import '../../Screens/writing_view.dart';
 
 class HiddenDrawer extends StatefulWidget {
   const HiddenDrawer({super.key});

@@ -1,9 +1,7 @@
 import 'package:blog_app/App/utilities/extensions/colors.dart';
 import 'package:flutter/material.dart';
-
-import '../Widgets/BlogWidgets/blog_card.dart';
-
 import '../../Models/blog_model.dart';
+import '../Widgets/BlogWidgets/blog_content.dart';
 
 class BlogView extends StatelessWidget {
   final Blog blog;
@@ -14,12 +12,12 @@ class BlogView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(blog.title),
+        elevation: 0.0,
         backgroundColor: CustomColor.primary,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
-        child: BlogCard(blog: blog),
+        child: BlogContent(blog: blog),
       ),
     );
   }
