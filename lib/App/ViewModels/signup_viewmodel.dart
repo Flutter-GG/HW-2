@@ -1,16 +1,18 @@
 import 'dart:async';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../Models/result_model.dart';
 import '../Models/user_model.dart';
 import 'package:image_picker/image_picker.dart';
+import '../utilities/user_state.dart';
 
 class UserViewModel {
-  final users = <User>[];
+  final List<User> users = [];
 
   String userName = '';
   String userEmail = '';
   String userPassword = '';
   String confirmPassword = '';
-  XFile? profileImage;
 
   final _imageStreamController = StreamController<XFile?>.broadcast();
   Stream<XFile?> get imageStream => _imageStreamController.stream;
@@ -19,7 +21,6 @@ class UserViewModel {
 
   Future<void> pickImage() async {
     final XFile? image = await _imagePicker.pickImage(source: ImageSource.gallery);
-    profileImage = image;
     _imageStreamController.add(image);
   }
 
@@ -28,18 +29,27 @@ class UserViewModel {
     return regex.hasMatch(email);
   }
 
-  int? getUserIndexByEmail(String email) {
-    for (int i = 0; i < users.length; i++) {
-      if (users[i].userEmail == email) {
-        return i;
-      }
-    }
-    return null;
+  int getUserIndexByEmail(String email) {
+    return users.indexWhere((user) => user.userEmail == email);
   }
 
-  int generateUserId() {
-    return users.length;
-  }
+Result handleRegistration(BuildContext context) {
+  final user = User(
+    userId: DateTime.now().millisecondsSinceEpoch,
+    userName: userName,
+    userEmail: userEmail,
+    password: userPassword,
+    profileImagePath: "", 
+    blogsWritten: [],
+  );
+
+ 
+  Provider.of<UserState>(context, listen: false).addUser(user);
+
+  return Result(isSuccess: true); 
+}
+
+
 
   Result registerUser({
     required String userName,
@@ -48,28 +58,10 @@ class UserViewModel {
     required String confirmPassword,
     required String profileImagePath,
   }) {
-    if (userName.isEmpty) {
-      return Result(isSuccess: false, errorMessage: "Name cannot be empty");
-    }
-
-    if (!isValidEmail(userEmail)) {
-      return Result(isSuccess: false, errorMessage: "Invalid email format");
-    }
-
-    if (getUserIndexByEmail(userEmail) != null) {
-      return Result(isSuccess: false, errorMessage: "User with this email already exists");
-    }
-
-    if (password.isEmpty || password.length < 8) {
-      return Result(isSuccess: false, errorMessage: "Password must be at least 8 characters long");
-    }
-
-    if (password != confirmPassword) {
-      return Result(isSuccess: false, errorMessage: "Passwords do not match");
-    }
+ 
 
     final newUser = User(
-      userId: generateUserId(),
+      userId: users.length,
       userName: userName,
       userEmail: userEmail,
       password: password,
@@ -81,32 +73,13 @@ class UserViewModel {
     return Result(isSuccess: true);
   }
 
-  Result handleRegistration() {
-    final result = registerUser(
-      userName: userName,
-      userEmail: userEmail,
-      password: userPassword,
-      confirmPassword: confirmPassword,
-      profileImagePath: profileImage?.path ?? '',
-    );
-
-    return result;
+  bool authenticateUser(String email, String password) {
+    final userIndex = getUserIndexByEmail(email);
+    if (userIndex == -1) return false;
+    return users[userIndex].password == password;
   }
 
   void dispose() {
     _imageStreamController.close();
   }
-  
-  bool authenticateUser(String email, String password) {
-  int? userIndex = getUserIndexByEmail(email);
-  
-  if (userIndex == null) return false;
-  
-  User user = users[userIndex];
-  
-  return user.password == password;
 }
-
-}
-
-

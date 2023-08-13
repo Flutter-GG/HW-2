@@ -1,9 +1,7 @@
 
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-
 import '../../../ViewModels/signup_viewmodel.dart';
 import '../../Screens/home_view.dart';
 import '../AuthWidgets/custom_button.dart';
@@ -12,7 +10,7 @@ import 'custom_text_field.dart';
 class SignUpForm extends StatelessWidget {
   final UserViewModel userViewModel;
 
-  const SignUpForm({super.key, required this.userViewModel});
+  const SignUpForm({Key? key, required this.userViewModel}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +68,7 @@ class SignUpForm extends StatelessWidget {
         CustomButton(
           label: 'Sign Up',
           onPressed: () {
-            final result = userViewModel.handleRegistration();
+            final result = userViewModel.handleRegistration(context); // Pass context here
             if (result.isSuccess) {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => const HomeView()));

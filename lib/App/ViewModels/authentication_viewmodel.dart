@@ -5,8 +5,6 @@ class AuthViewModel with ChangeNotifier {
   final UserViewModel _userViewModel = UserViewModel();
 
   Future<bool> login(String email, String password) async {
-    bool isAuthenticated = _userViewModel.authenticateUser(email, password);
-    
-    return isAuthenticated;
+    return _userViewModel.authenticateUser(email, password);
   }
 }
