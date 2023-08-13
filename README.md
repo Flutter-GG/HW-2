@@ -1,52 +1,57 @@
-# HW-2
+Implement this design or similar.
+You must utilize the following widgets:
+Image
+AppBar
+TextField
+Row
+Column
+Icon
+Button
+ListView or other related widgets
+Create at least 5 screens, and provide navigation between these screens.
+Implement global variable management.
+Organize the Flutter project structure appropriately.
+Write a clean and well-organized code.
 
-## Description
+# A blog about the best islands in the worlds , each one in the blog talked about there experience , approxmate budget and the rate. 
 
-Create a Blog app using the Flutter framework. In the app, users should be able to view, add, delete, and update posts.
+contain json data 
+# View folder
+contain 2 folders :
+# Widget:
+ which contain all the repeated component to call it each time we need it such as the appbar , the navigation bar , and the colors , extensions ,other methods .
+ # Screens:
+ the content of screen folder is basiclly the Ui of the application  
 
-## Details
-1. Create your own JSON data, and Implement it to a global variable.
-2. Create at least 5 screens, including viewing all Post screen, a single post screen, reading list screen, adding a new post screen, updating a post screen, and search screen.
-3. Implement the option of adding a post to the Reading List, and removing it.
-4. Implement the ability to search a post by title.
- 
+ # view_model folder:
+it's contain the files that  links between the ui and the logical functions ,
+such as the card widget , the model of the json data 
 
-## Minimum Requirements
-1. Implement this design or similar.
-2. You must utilize the following widgets:
-   - Image
-   - AppBar
-   - TextField
-   - Row
-   - Column
-   - Icon
-   - Button
-   - ListView or other related widgets
-3. Create at least 5 screens, and provide navigation between these screens.
-4. Implement global variable management.
-5. Organize the Flutter project structure appropriately.
-6. Write a clean and well-organized code.
+# guide  how to use the app.
+# you can see all of the posts , the detailes of each post
+# can update the content and the title 
+# can delete with long press
+# can add new post
+# can click book mark  icon to read the post later 
 
-<img width="276" alt="1" src="https://github.com/Flutter-GG/HW-2/assets/132256369/5db411f8-15fd-4ab9-9328-52ff285bfd63">
-<img width="276" alt="2" src="https://github.com/Flutter-GG/HW-2/assets/132256369/6970d437-2d02-495a-801f-7e2e0dc53b06">
-<img width="276" alt="3" src="https://github.com/Flutter-GG/HW-2/assets/132256369/316fe9ef-43c8-4c7b-9175-c3d377779723">
-<img width="276" alt="4" src="https://github.com/Flutter-GG/HW-2/assets/132256369/43b978d6-ab91-459e-9b2d-2e872f44b40c">
-<img width="276" alt="5" src="https://github.com/Flutter-GG/HW-2/assets/132256369/0518e305-329b-4a56-8af7-9c630a9cd8a3">
+# SCREENSHOTS OF THE APPLICATION 
 
-
-## Bonus:
-  - Create a login screen, and display all posts of the user on his profile screen (should create user id in each post in JSON data).
-
-## Submission:
-1. Flutter Project:
-   - Submit the complete Flutter project folder, including all necessary files.
-2. Screenshots of your app.
-3. GitHub Submission:
-   - Create a Fork from the project’s GitHub repository.
-   - Create a new branch with your name.
-   - Commit frequently with descriptive messages to show your progress.
-   - Finally, create a Pull Request to the project’s original repository.
-
-
-## Deadline: 
-13/08/2023  11:59 PM
+# The home page contain all posts 
+![alt text](assets\images\homePage.png)
+# add new post
+![alt text](assets\images\addNew.png)
+# posts after adding
+![alt text](assets\images\afteradding.png)
+# editing post
+![alt text](assets\images\editScreen.png)
+  # Post after editing 
+![alt text](assets\images\afterEdit.png)
+  # Book mark any post 
+![alt text](assets\images\bookmarked.png)
+![alt text](assets\images\bookMarkScreen.png)
+  # Detailes  any post 
+![alt text](assets\images\detailes.png)
+  # Search for  any post 
+![alt text](assets\images\searching.png)
+  # User Profile 
+![alt text](assets\images\profile.png)
