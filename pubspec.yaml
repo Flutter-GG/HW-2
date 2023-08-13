@@ -40,6 +40,7 @@ dependencies:
   page_transition: ^2.0.9
   image_picker: ^1.0.2
   provider: ^6.0.5
+  hidden_drawer_menu: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -70,4 +71,4 @@ flutter:
  
     - assets/data/
     - assets/images/
-
+    - assets/data/data.json

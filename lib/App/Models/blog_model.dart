@@ -1,6 +1,11 @@
+import 'dart:convert';
+import 'package:flutter/services.dart';
+
 class Blog {
   final String title;
   final String authorName;
+  final String authorAvatar;
+// Add this
   final String summary;
   final List<Map<String, String>> content;
   final String date;
@@ -11,6 +16,7 @@ class Blog {
   Blog({
     required this.title,
     required this.authorName,
+    required this.authorAvatar, // Add this
     required this.summary,
     required this.content,
     required this.date,
@@ -24,12 +30,29 @@ class Blog {
     return Blog(
       title: json['title'],
       authorName: json['authorName'],
+      authorAvatar: json['authorAvatar'] ?? 'assets/default_avatar.jpg',
       summary: json['summary'],
-      content: List<Map<String, String>>.from(json['content'].map((item) => Map<String, String>.from(item))),
+      content: List<Map<String, String>>.from(
+          json['content'].map((item) => Map<String, String>.from(item))),
       date: json['date'],
       writerUserId: json['writerUserId'],
       category: json['category'],
       readingDuration: json['readingDuration'],
     );
+  }
+
+  Future<List<Blog>> loadBlogsFromAssets() async {
+    // Load the JSON string from the assets
+    final jsonString = await rootBundle.loadString('assets/data/data.json');
+
+    // Decode the JSON to a dynamic structure
+    final decodedData = jsonDecode(jsonString);
+
+    // Parse the 'blogs' list to a list of Blog objects
+    final List<Blog> blogs = (decodedData['blogs'] as List)
+        .map((jsonBlog) => Blog.fromJson(jsonBlog))
+        .toList();
+
+    return blogs;
   }
 }

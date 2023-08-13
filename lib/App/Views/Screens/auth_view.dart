@@ -5,8 +5,6 @@ import '../../utilities/extensions/colors.dart';
 import '../Widgets/AuthWidgets/custom_button.dart';
 import 'login_view.dart';
 
-
-
 class AuthView extends StatefulWidget {
   const AuthView({super.key});
 
@@ -34,10 +32,8 @@ class _AuthViewState extends State<AuthView> {
             CustomButton(
               label: 'Login',
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => LogInView()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LogInView()));
               },
             ),
             Padding(
@@ -47,7 +43,7 @@ class _AuthViewState extends State<AuthView> {
             CustomButton(
               label: 'Register',
               backgroundColor: CustomColor.black,
-              textColor: CustomColor.white,
+              textColor: Colors.white,
               onPressed: () {
                 Navigator.push(
                     context,
