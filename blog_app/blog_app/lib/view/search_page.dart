@@ -14,8 +14,21 @@ class Search extends StatefulWidget {
   State<Search> createState() => _SearchState();
 }
 
+TextEditingController? textSearchController;
+
 class _SearchState extends State<Search> {
-  TextEditingController? textSearch = TextEditingController();
+  @override
+  void initState() {
+    textSearchController = TextEditingController();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    textSearchController!.dispose();
+    super.dispose();
+  }
+
   bool isSubmitted = false;
   @override
   Widget build(BuildContext context) {
@@ -28,9 +41,9 @@ class _SearchState extends State<Search> {
             Padding(
               padding: const EdgeInsets.all(25),
               child: TextFieldWidget(
-                textController: textSearch,
+                textController: textSearchController,
                 onSubmitted: (value) {
-                  textSearch!.text == value;
+                  textSearchController!.text == value;
                   isSubmitted = true;
                   setState(() {});
                 },
@@ -39,7 +52,7 @@ class _SearchState extends State<Search> {
               ),
             ),
             // Do not show the list if the user did not submitted the text search
-            isSubmitted ? searchResult(textSearch!.text) : Container()
+            isSubmitted ? searchResult(textSearchController!.text) : Container()
           ],
         ),
       ),
