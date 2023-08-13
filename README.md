@@ -27,11 +27,12 @@ Create a Blog app using the Flutter framework. In the app, users should be able 
 5. Organize the Flutter project structure appropriately.
 6. Write a clean and well-organized code.
 
-<img width="276" alt="1" src="https://github.com/Flutter-GG/HW-2/assets/132256369/5db411f8-15fd-4ab9-9328-52ff285bfd63">
-<img width="276" alt="2" src="https://github.com/Flutter-GG/HW-2/assets/132256369/6970d437-2d02-495a-801f-7e2e0dc53b06">
-<img width="276" alt="3" src="https://github.com/Flutter-GG/HW-2/assets/132256369/316fe9ef-43c8-4c7b-9175-c3d377779723">
-<img width="276" alt="4" src="https://github.com/Flutter-GG/HW-2/assets/132256369/43b978d6-ab91-459e-9b2d-2e872f44b40c">
-<img width="276" alt="5" src="https://github.com/Flutter-GG/HW-2/assets/132256369/0518e305-329b-4a56-8af7-9c630a9cd8a3">
+<img width="276" alt="1" src="https://github.com/Muham23d/HW-2/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-08-13%20at%2020.36.46.png?raw=true">
+<img width="276" alt="2" src="https://github.com/Muham23d/HW-2/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-08-13%20at%2020.14.46.png?raw=true">
+<img width="276" alt="3" src="https://github.com/Muham23d/HW-2/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-08-13%20at%2020.44.48.png?raw=true">
+<img width="276" alt="4" src="https://github.com/Muham23d/HW-2/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-08-13%20at%2020.45.42.png?raw=true">
+<img width="276" alt="5" src="https://github.com/Muham23d/HW-2/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-08-13%20at%2020.46.34.png?raw=true">
+<img width="276" alt="5" src="https://github.com/Muham23d/HW-2/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-08-13%20at%2020.46.59.png?raw=true">
 
 
 ## Bonus:
