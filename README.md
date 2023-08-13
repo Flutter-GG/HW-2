@@ -1,6 +1,5 @@
 # projec2 in Flutter Bootcamp Application to follow the news
 
-
 Form Abdulelah Aljuraysi
 
 ## Getting Started
@@ -8,6 +7,8 @@ Form Abdulelah Aljuraysi
 ## This is the home Page in my App You can see the existing news
 
 <img src="https://raw.githubusercontent.com/36nv/Project2FlutterBootcamp/main/image_readMy/home.png" width="200" height="400">
+
+## .
 
 ## This is the blog page that appears if you click on the blog and the blog appears in full
 
