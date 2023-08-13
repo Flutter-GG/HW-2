@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
-options: "9a1a92567da5ba281853eeb8aa848932366c22d4c906cd6a3183548b7eafb970"
-build_start_time: [1691770275, 706305027]
-build_end_time: [1691770284, 952024936]
-inputs:
-  "/Users/wejdant/Desktop/Project/blog_app/macos/Flutter/GeneratedPluginRegistrant.swift": [1691770190, 837864875]
-  "/Users/wejdant/Desktop/Project/blog_app/macos/Runner/AppDelegate.swift": [1689202922, 0]
-  "/Users/wejdant/Desktop/Project/blog_app/macos/Runner/MainFlutterWindow.swift": [1689202922, 0]
