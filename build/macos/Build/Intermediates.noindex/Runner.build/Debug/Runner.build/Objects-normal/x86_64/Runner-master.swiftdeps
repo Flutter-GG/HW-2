@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "dfc3a09c9cf481262bc34f8816ab25d564c0820d8e491cdf1bfd27d36923ef46"
+build_start_time: [1691875789, 218703985]
+build_end_time: [1691875802, 228921890]
+inputs:
+  ? "/Users/36nv/Desktop/Flutter_Bootcamp/ThierdWeek/Project2FlutterBootcamp/project2_flutter_bootcamp/macos/Flutter/GeneratedPluginRegistrant.swift"
+  : [1691875657, 255382061]
+  "/Users/36nv/Desktop/Flutter_Bootcamp/ThierdWeek/Project2FlutterBootcamp/project2_flutter_bootcamp/macos/Runner/AppDelegate.swift": [1686756980, 0]
+  ? "/Users/36nv/Desktop/Flutter_Bootcamp/ThierdWeek/Project2FlutterBootcamp/project2_flutter_bootcamp/macos/Runner/MainFlutterWindow.swift"
+  : [1686756980, 0]

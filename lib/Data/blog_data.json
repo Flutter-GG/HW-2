@@ -1,0 +1,69 @@
+{
+    "BlogData": [
+
+   {
+    "id": "1",
+    "title": "Get ready for a repositioned end call button in iOS 17",
+    "dateBlog": "2023-08-10",
+    "author": "The Verge",
+    "authorImage": "https://cdn.vox-cdn.com/uploads/chorus_asset/file/9672633/VergeOG.0_1200x627.0.png",
+    "content": "Apple’s redesigned call interface repositions the red end call button, moving it closer to the other controls.",
+    "image": "https://duet-cdn.vox-cdn.com/thumbor/0x0:1290x860/1200x800/filters:focal(645x430:646x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24841806/IMG_1562.jpg",
+    "subject": "Tech"
+  },
+  
+  {
+    "id": "2",
+    "title": "The Morning After: Which Samsung foldable should you buy?",
+    "dateBlog": "2023-08-25",
+    "author": "Engadget",
+    "authorImage": "https://images.squarespace-cdn.com/content/v1/58c9b86bd1758e1f19dec72a/1491592267595-XFW23K2TSSKZFY0C2C3S/image-asset.png",
+    "content": "Samsung’s newest foldables, the Z Flip 5 and Z Fold 5, have been put through their paces by Engadget’s team of skilled reviewers. If you are wondering which of these two you should lay your cash down for, then we’ve got all the information you need.",
+    "image": "https://images.samsung.com/sa_en/smartphones/galaxy-z-fold3-5g/buy/zfold3_carousel_mainsinglekv_mo.jpg",
+    "subject": "Tech"
+  },
+  {
+    "id": "3",
+    "title": "Epic fails to score Supreme Court support to force immediate App Store changes",
+    "dateBlog": "2023-08-9",
+    "author": "Zac Hall",
+    "authorImage": "https://secure.gravatar.com/avatar/4403f5bde9b9dd1799eda1756139557d?s=60&d=mm&r=r",
+    "content": "Apple is still awaiting the fate of whether or not the Supreme Court will take up its appeal in the Epic Games trial. However, Apple has walked away with a small victory today.",
+    "image": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/09/apple-epic-appeal.jpg?w=1500&quality=82&strip=all&ssl=1",
+    "subject": "Tech"
+  },
+  {
+    "id": "4",
+    "title": "Apple Watch Series 9 launch might include an all-new band design",
+    "dateBlog": "2023-08-9",
+    "author": "Zac Hal",
+    "authorImage": "https://secure.gravatar.com/avatar/4403f5bde9b9dd1799eda1756139557d?s=60&d=mm&r=r",
+    "content": "Apple is expected to unveil the Apple Watch Series 9 and Ultra 2 next month. A new rumor adds that an all-new Apple Watch band design could also launch with the new watches.",
+    "image": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2023/04/Apple-Watch-watchOS.jpg?w=1500&quality=82&strip=all&ssl=1",
+    "subject": "Tech"
+  },
+  {
+    "id": "5",
+    "title": "Disney announces price hike for Disney+",
+    "dateBlog": "2023-08-9",
+    "author": "Chance Miller",
+    "authorImage": "https://secure.gravatar.com/avatar/8ca0a5473ca1b059b4b0aa628da621ff?s=60&d=mm&r=r",
+    "content": "Disney is shaking up its portfolio of streaming services starting next month. The company announced today that it would increase the pricing for ad-free Disney+ and Hulu while also saying that it is “actively exploring” ways to crack down on password sharing, similar to what Netflix recently implemented.    ",
+    "image": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2022/08/Disney-Plus-more-expensive-ad-supported-tier.jpg?w=1500&quality=82&strip=all&ssl=1",
+    "subject": "Tech"
+  },
+  {
+    "id": "6",
+    "title": "How to Make Money Writing Emails – Path To Six Figures",
+    "dateBlog": "2023-08-28",
+    "author": "Copyblogger",
+    "authorImage": "https://pbs.twimg.com/profile_images/1049687098066984960/bpWzPM1N_400x400.jpg",
+    "content": "You may have heard that you can make thousands of dollars sending emails, but what’s the difference between an email copywriter that makes a few thousand dollars per month and an email copywriter that makes well over $50,000 per month from writing emails?",
+    "image": "https://copyblogger.com/wp-content/uploads/2023/07/CopBloggerBlogpost1400x706EmailMoney.png",
+    "subject": "marketing"
+  }
+ ]
+}  
+    
+
+    
