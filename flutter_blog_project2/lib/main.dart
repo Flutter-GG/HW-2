@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blog_project2/data_related_files/blog_data.dart';
 import 'package:flutter_blog_project2/data_related_files/data_model.dart';
-import 'package:flutter_blog_project2/screens/home_screen.dart';
+import 'package:flutter_blog_project2/screens/login_screen.dart';
 
 List<BlogModel> blogList = []; //define my list of objects
 List<BlogModel> specficUserPosts = []; //define a list of posts for the logged in user
@@ -20,7 +20,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: HomeScreen());
+    return MaterialApp(
+        debugShowCheckedModeBanner: false, home: LoginScreen());
   }
 }
