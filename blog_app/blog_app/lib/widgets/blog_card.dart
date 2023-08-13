@@ -5,6 +5,7 @@ import 'package:blog_app/models/blog_model.dart';
 import 'package:blog_app/ui_classes/spaces.dart';
 import 'package:blog_app/view/blog_page.dart';
 import 'package:blog_app/functions/border_radius_function.dart';
+import 'package:blog_app/view/bookmark_page.dart';
 import 'package:blog_app/widgets/image_widget.dart';
 import 'package:blog_app/widgets/profile_and_author_name.dart';
 import 'package:blog_app/widgets/text_widget.dart';
@@ -83,6 +84,9 @@ class _BlogCardState extends State<BlogCard> {
                       } else {
                         bookmarkList.remove(widget.blog);
                         setState(() {});
+                        context
+                            .findAncestorStateOfType<BookmarkState>()
+                            ?.setState(() {});
                       }
                     },
                     icon: Icon(widget.blog.bookmark!

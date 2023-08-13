@@ -5,9 +5,14 @@ import 'package:flutter/material.dart';
 
 import '../functions/appbar_function.dart';
 
-class Bookmark extends StatelessWidget {
+class Bookmark extends StatefulWidget {
   const Bookmark({super.key});
 
+  @override
+  State<Bookmark> createState() => BookmarkState();
+}
+
+class BookmarkState extends State<Bookmark> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
