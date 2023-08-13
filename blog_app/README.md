@@ -25,7 +25,7 @@ A new Flutter project is a blog..
 <img width="276" alt="Search post" src="assets/Screens_for_Readme/Screen4.png">
 
 
-**This is a Reading list page**
+**This is a Reading list page**\
 <img width="276" alt="This is a fillter option" src="assets/Screens_for_Readme/Screen5.png">
 
 **This is a page for read the post**
