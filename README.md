@@ -1,52 +1,71 @@
-# HW-2
+## Project Idea 
 
-## Description
+The goal of this project is to create an blogs application that enables the user to browse posts and controling using CRUD operations.
 
-Create a Blog app using the Flutter framework. In the app, users should be able to view, add, delete, and update posts.
-
-## Details
-1. Create your own JSON data, and Implement it to a global variable.
-2. Create at least 5 screens, including viewing all Post screen, a single post screen, reading list screen, adding a new post screen, updating a post screen, and search screen.
-3. Implement the option of adding a post to the Reading List, and removing it.
-4. Implement the ability to search a post by title.
- 
-
-## Minimum Requirements
-1. Implement this design or similar.
-2. You must utilize the following widgets:
-   - Image
-   - AppBar
-   - TextField
-   - Row
-   - Column
-   - Icon
-   - Button
-   - ListView or other related widgets
-3. Create at least 5 screens, and provide navigation between these screens.
-4. Implement global variable management.
-5. Organize the Flutter project structure appropriately.
-6. Write a clean and well-organized code.
-
-<img width="276" alt="1" src="https://github.com/Flutter-GG/HW-2/assets/132256369/5db411f8-15fd-4ab9-9328-52ff285bfd63">
-<img width="276" alt="2" src="https://github.com/Flutter-GG/HW-2/assets/132256369/6970d437-2d02-495a-801f-7e2e0dc53b06">
-<img width="276" alt="3" src="https://github.com/Flutter-GG/HW-2/assets/132256369/316fe9ef-43c8-4c7b-9175-c3d377779723">
-<img width="276" alt="4" src="https://github.com/Flutter-GG/HW-2/assets/132256369/43b978d6-ab91-459e-9b2d-2e872f44b40c">
-<img width="276" alt="5" src="https://github.com/Flutter-GG/HW-2/assets/132256369/0518e305-329b-4a56-8af7-9c630a9cd8a3">
+## Pages
 
 
-## Bonus:
-  - Create a login screen, and display all posts of the user on his profile screen (should create user id in each post in JSON data).
 
-## Submission:
-1. Flutter Project:
-   - Submit the complete Flutter project folder, including all necessary files.
-2. Screenshots of your app.
-3. GitHub Submission:
-   - Create a Fork from the project’s GitHub repository.
-   - Create a new branch with your name.
-   - Commit frequently with descriptive messages to show your progress.
-   - Finally, create a Pull Request to the project’s original repository.
+1. Home Page : To view all blogs.
+   
+![HomePage](https://github.com/NouraAljarba/HW-2/assets/108701880/3c19158c-38e4-4ef9-b872-98983af7f52c)
 
 
-## Deadline: 
-13/08/2023  11:59 PM
+
+2. Search Page: Through this page, the user can search for the title.
+   
+1- when the value exists.
+
+![searchPage( found value)](https://github.com/NouraAljarba/HW-2/assets/108701880/5304560b-b0be-4b8f-983a-348e07b89eb2)
+
+2- when there is no value.
+
+![searchPage(No value found)](https://github.com/NouraAljarba/HW-2/assets/108701880/c57066e0-34e3-4c10-800d-47b43cad04df)
+
+
+
+3. add Page : When the user wants to add a new post.
+   
+1- add page
+
+   ![addPage](https://github.com/NouraAljarba/HW-2/assets/108701880/b8f342b5-7732-4ca3-81d5-3b848ab8c0ce)
+
+2- Fill fields
+
+   ![add values in addPage](https://github.com/NouraAljarba/HW-2/assets/108701880/e6cc5ee9-b8d7-47a1-ac07-bc66afd6e6cd)
+
+3- After adding the post to the home page
+
+   ![my new post is added in HomeScreen](https://github.com/NouraAljarba/HW-2/assets/108701880/815210cd-8de9-47e1-9fe3-954c9d0ff237)
+
+
+
+4. reading Page : when the user need add post in reading list.
+   
+1- user chooses what post he wants add to the reading list page and press the bookmark button
+
+![user need add this post in reading page ](https://github.com/NouraAljarba/HW-2/assets/108701880/cd2444a5-e04c-4c0c-abac-1a3fabc0b6bc)
+
+![add bookMark](https://github.com/NouraAljarba/HW-2/assets/108701880/5d60da0d-bb2b-490e-b940-29fe61292f91)
+
+2- when the post is added
+
+![add in reading Page](https://github.com/NouraAljarba/HW-2/assets/108701880/5434ebf9-48e9-4881-b617-12ebcaebd0a2)
+
+3- when user need delete post in reading list page (By long pressing on the post he want to delete)
+
+![delete post in reading page](https://github.com/NouraAljarba/HW-2/assets/108701880/0ba9fd21-cf63-40a1-8fdb-041ba438c960)
+
+![bookMark is removed](https://github.com/NouraAljarba/HW-2/assets/108701880/dcfb65e9-5f3a-471b-8952-671b43186fd5)
+
+
+
+5. Edit Page :when user need edit Post
+   
+1- user choose post he want edit and click on the edit button
+
+![EditPage](https://github.com/NouraAljarba/HW-2/assets/108701880/9f76fbff-6dc4-45f3-b7b9-3e85a3394f59)
+
+2-post in home page after updated
+
+![post is updated](https://github.com/NouraAljarba/HW-2/assets/108701880/2839b81a-a050-4e06-ae7d-868fdf38f268)
