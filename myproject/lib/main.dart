@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:myproject/model/my_model.dart';
 import 'package:myproject/view/navigations_home.dart';
 
-
 List<Blog> listBlog = [];
 
 void main() {

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:myproject/main.dart';
 import 'package:myproject/model/my_model.dart';
+import 'package:myproject/view/add_screen.dart';
+import 'package:myproject/view/utility/extension.dart';
+import 'package:myproject/view/utility/update.dart';
 import 'package:myproject/widget/blog_screen.dart';
-
 
 class Carduser extends StatefulWidget {
   const Carduser({
@@ -64,6 +66,21 @@ class _CarduserState extends State<Carduser> {
                 title: Text(widget.blog.title),
                 subtitle: Text(widget.blog.subject),
               ),
+              ListTile(
+                  trailing: IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => EditScreen(
+                        blogDataModel: widget.blog,
+                      ),
+                    ),
+                  );
+                },
+                icon: Icon(Icons.edit),
+                iconSize: 25,
+              )),
               Padding(
                 padding: const EdgeInsets.only(left: 20),
                 child: Row(
