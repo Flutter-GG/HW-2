@@ -14,7 +14,7 @@ A new Flutter project is a blog..
 
 **This is a page for add new post**
 - You can fill the form to added new post
-<img width="276" alt="THome page" src="assets/Screens_for_Readme/Screen2.png">
+<img width="276" alt="THome page" src="blog_app/assets/Screens_for_Readme/Screen2.png">
 
 - As you see the post has been added.
 <img width="276" alt="Add new post" src="assets/Screens_for_Readme/Screen3.png">
