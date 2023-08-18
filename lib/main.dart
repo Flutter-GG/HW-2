@@ -1,22 +1,25 @@
 import 'dart:convert';
-import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:project2_flutter_bootcamp/Screens/home_screen.dart';
+import 'package:flutter/services.dart';
 
-import 'Model/blog_data_model.dart';
+import 'package:project2_flutter_bootcamp/Screens/home_screen.dart';
+import 'package:project2_flutter_bootcamp/Model/blog_data_model.dart';
 
 List<BlogDataModel> listBlog = [];
 List<BlogDataModel> listBlogSave = [];
 
-void main() {
-  File blogFile = File(
-      "/Users/36nv/Desktop/Project2FlutterBootcamp/lib/Data/blog_data.json");
-  var stringProduct = blogFile.readAsStringSync();
-  var blogData = json.decode(stringProduct);
+Future<void> loadBlogData() async {
+  String jsonString = await rootBundle.loadString('lib/Data/blog_data.json');
+  var blogData = json.decode(jsonString);
   for (var element in blogData["BlogData"]) {
     listBlog.add(BlogDataModel.fromJson(element));
   }
+}
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await loadBlogData();
   runApp(const MyApp());
 }
 

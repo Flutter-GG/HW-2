@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:project2_flutter_bootcamp/Utils/extensions.dart';
 import '../Model/blog_data_model.dart';
 import '../Screens/blog_page.dart';
-import '../Screens/edit_screen.dart'; // استيراد صفحة التعديل هنا
+import '../Screens/edit_screen.dart';
 import '../main.dart';
 
 class CardWidget extends StatefulWidget {
